@@ -13,10 +13,10 @@ export default function Home() {
     <div>
       <Header title="Home Page" description="description of home page" />
       
-      <main className="bg-nav-bar">
-        <button className="p-3 border border-b-gray-200 bg-slate-500" onClick={e => setTheme(e)} value="default">default</button>
-        <button className="p-3" onClick={e => setTheme(e)} value="red">Red</button>
-        <button className="p-3" onClick={e => setTheme(e)} value="darkness">Darkness</button>
+      <main className="bg-nav-bar bg-hover">
+        <button className="btn-style" onClick={e => setTheme(e)} value="default">default</button>
+        <button className="btn-style" onClick={e => setTheme(e)} value="red">Red</button>
+        <button className="btn-style" onClick={e => setTheme(e)} value="darkness">Darkness</button>
         Main
         <ul>
           <li>meow</li>

@@ -431,8 +431,8 @@ video {
   /*Body*/
   --body-bg: white;
   --body-bg-alt: indigo;
-  --body-bg-cards: darkblue;
-  --body-bg-cards-alt: teal;
+  --card-bg: darkblue;
+  --card-bg-alt: teal;
   --body-color: black;
   --body-link-color: indigo;
   /*Custom Bullet Points*/
@@ -471,8 +471,8 @@ video {
   /*Body*/
   --body-bg: #2a285a;
   --body-bg-alt: #676278;
-  --body-bg-cards: #333330;
-  --body-bg-cards-alt: #711e15;
+  --card-bg: #333330;
+  --card-bg-alt: #711e15;
   --body-color: #ffffff;
   --body-link-color: #676278;
   /*Custom Bullet Points*/
@@ -511,8 +511,9 @@ video {
   /*Body*/
   --body-bg: #cc3333;
   --body-bg-alt: #660000;
-  --body-bg-cards: #993300;
-  --body-bg-cards-alt: #333333;
+  --card-bg: #993300;
+  --card-bg-alt: #333333;
+  --btn-bg-hover: white;
   --body-color: #ffffff;
   --body-link-color: #660000;
   /*Custom Bullet Points*/
@@ -621,32 +622,34 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.border-spacing-1 {
-  --tw-border-spacing-x: 0.25rem;
-  --tw-border-spacing-y: 0.25rem;
-  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
-}
-
-.border {
+.btn-style {
   border-width: 1px;
+  padding: 0.75rem;
 }
 
-.border-b-gray-200 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(229 231 235 / var(--tw-border-opacity));
+.btn-style:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .btn-style {
+    width: 16rem;
+  }
+
+  .btn-style:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  }
+}
+
+.btn-style {
+  border-color: var(--card-bg-alt);
+  background-color: var(--card-bg);
 }
 
 .bg-nav-bar {
   background-color: var(--nav-bar-bg);
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 html,

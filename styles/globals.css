@@ -17,8 +17,8 @@
     /*Body*/
     --body-bg: white;
     --body-bg-alt: indigo;
-    --body-bg-cards: darkblue;
-    --body-bg-cards-alt: teal;
+    --card-bg: darkblue;
+    --card-bg-alt: teal;
   
     --body-color: black;
     --body-link-color: indigo;
@@ -61,8 +61,8 @@
     /*Body*/
     --body-bg: #2a285a;
     --body-bg-alt: #676278;
-    --body-bg-cards: #333330;
-    --body-bg-cards-alt: #711e15;
+    --card-bg: #333330;
+    --card-bg-alt: #711e15;
 
     --body-color: #ffffff;
     --body-link-color: #676278;
@@ -105,8 +105,9 @@
     /*Body*/
     --body-bg: #cc3333;
     --body-bg-alt: #660000;
-    --body-bg-cards: #993300;
-    --body-bg-cards-alt: #333333;
+    --card-bg: #993300;
+    --card-bg-alt: #333333;
+    --btn-bg-hover: white;
   
     --body-color: #ffffff;
     --body-link-color: #660000;
@@ -122,6 +123,14 @@
     --list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
   
     --list-image: var(--list-red);
+  }
+}
+
+@layer components {
+  .btn-style {
+    @apply p-3 border md:w-64 hover:bg-yellow-500 md:hover:bg-slate-500;
+    border-color: theme('border.alt');
+    background-color: theme('backgroundColor.alt');
   }
 }
 
