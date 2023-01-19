@@ -12,11 +12,11 @@ module.exports = {
         'nav-bar-hover': 'var(--nav-bar-bg-hover)',
         'nav-bar-hover-dd': 'var(--nav-bar-bg-hover-dd)',
         'primary': 'var(--body-bg)',
-        'alt': 'var(--card-bg)'
+        'secondary': 'var(--card-bg)'
       },
-      border: {
+      borderColor: {
         'primary': 'var(--body-bg-alt)',
-        'alt': 'var(--card-bg-alt)',
+        'secondary': 'var(--card-bg-alt)',
       },
       textColor: {
         'nav-bar': 'var(--nav-bar-color)',

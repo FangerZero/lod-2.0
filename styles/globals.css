@@ -128,9 +128,7 @@
 
 @layer components {
   .btn-style {
-    @apply p-3 border md:w-64 hover:bg-yellow-500 md:hover:bg-slate-500;
-    border-color: theme('border.alt');
-    background-color: theme('backgroundColor.alt');
+    @apply p-3 border md:w-64 hover:bg-yellow-500 md:hover:bg-slate-500 bg-secondary border-secondary;
   }
 }
 

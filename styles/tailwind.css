@@ -624,6 +624,8 @@ video {
 
 .btn-style {
   border-width: 1px;
+  border-color: var(--card-bg-alt);
+  background-color: var(--card-bg);
   padding: 0.75rem;
 }
 
@@ -641,11 +643,6 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(100 116 139 / var(--tw-bg-opacity));
   }
-}
-
-.btn-style {
-  border-color: var(--card-bg-alt);
-  background-color: var(--card-bg);
 }
 
 .bg-nav-bar {
