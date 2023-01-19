@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "tw-build": "tailwindcss -i ./styles/globals.css -o ./styles/tailwind.css",
+    "tw-watch": "tailwindcss -i ./styles/globals.css -o ./styles/tailwind.css --watch"
   },
   "dependencies": {
     "next": "13.1.2",
