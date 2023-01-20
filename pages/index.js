@@ -3,8 +3,6 @@ import {saveToStorage} from '../components/util/localstorage';
 
 export default function Home() {
   const setTheme = (e) => {
-    // document.documentElement.removeAttribute('data-theme');
-    // document.documentElement.setAttribute('data-theme', newTheme);
     saveToStorage('data-theme', e.target.value);
     return document.documentElement.setAttribute('data-theme', e.target.value);
   };

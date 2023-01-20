@@ -419,6 +419,24 @@ video {
   display: none;
 }
 
+/*Custom Bullet Points*/
+
+--list-red: url("../public/images/bullets/DS_Red-Eye.webp");
+
+--list-darkness: url("../public/images/bullets/DS_Darkness.webp");
+
+--list-jade: url("../public/images/bullets/DS_Red-Eye.webp");
+
+--list-silver: url("../public/images/bullets/DS_Red-Eye.webp");
+
+--list-violet: url("../public/images/bullets/DS_Red-Eye.webp");
+
+--list-blue: url("../public/images/bullets/DS_Red-Eye.webp");
+
+--list-gold: url("../public/images/bullets/DS_Red-Eye.webp");
+
+--list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
+
 [data-theme="default"] {
   /*Nav Bar*/
   --nav-bar-bg: indigo;
@@ -435,15 +453,6 @@ video {
   --card-bg-alt: teal;
   --body-color: black;
   --body-link-color: indigo;
-  /*Custom Bullet Points*/
-  --list-red: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-darkness: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-jade: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-silver: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-violet: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-blue: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-gold: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
   --list-image: var(--list-red);
 }
 
@@ -475,16 +484,7 @@ video {
   --card-bg-alt: #711e15;
   --body-color: #ffffff;
   --body-link-color: #676278;
-  /*Custom Bullet Points*/
-  --list-red: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-darkness: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-jade: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-silver: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-violet: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-blue: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-gold: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-image: var(--list-darkness);
+  --list-image: url("../public/images/bullets/DS_Darkness.webp");
 }
 
 [data-theme="red"] {
@@ -516,16 +516,7 @@ video {
   --btn-bg-hover: white;
   --body-color: #ffffff;
   --body-link-color: #660000;
-  /*Custom Bullet Points*/
-  --list-red: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-darkness: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-jade: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-silver: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-violet: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-blue: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-gold: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-image: var(--list-red);
+  --list-image: url("../public/images/bullets/DS_Red-Eye.webp");
 }
 
 *, ::before, ::after {
