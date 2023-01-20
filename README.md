@@ -1,3 +1,27 @@
+start server locally `npm run dev`
+
+Build Tailwind for production/Dev `npm run tw-build`
+
+Watch Tailwind changes for dev `npm run tw-watch`
+
+Build Code for production `npm run build`
+
+Export code for production `npm run export`
+
+Push code to github `git push`
+
+// Setup Firebase
+
+Push code to Firebase `firebase deploy --only hosting`
+
+---
+## Cypress
+open and run Cypress`npx cypress open`
+
+http://localhost:8080/__/
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
