@@ -12,6 +12,11 @@ export default function Banner() {
       <button className="nav-style" onClick={e => setTheme(e)} value="red">Red</button>
       <button className="nav-style" onClick={e => setTheme(e)} value="darkness">Darkness</button>
       <button className="nav-style" onClick={e => setTheme(e)} value="jade">Jade</button>
+      <button className="nav-style" onClick={e => setTheme(e)} value="silver">Silver</button>
+      <button className="nav-style" onClick={e => setTheme(e)} value="violet">Violet</button>
+      <button className="nav-style" onClick={e => setTheme(e)} value="blue-sea">Blue-sea</button>
+      <button className="nav-style" onClick={e => setTheme(e)} value="gold">Gold</button>
+      <button className="nav-style" onClick={e => setTheme(e)} value="divine">Divine</button>
     </nav>
   )
 }

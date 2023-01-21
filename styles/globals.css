@@ -89,7 +89,7 @@
 
 @layer components {
   .nav-style {
-    @apply p-3 md:w-64 hover:bg-primary bg-secondary text-accent;
+    @apply p-3 md:w-64 hover:bg-accent hover:text-secondary bg-secondary text-accent;
   }
 }
 
@@ -111,6 +111,8 @@ body {
   --list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
   --list-image: var(--list-red);
   
+  background: var(--primary);
+
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
