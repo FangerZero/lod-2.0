@@ -89,7 +89,10 @@
 
 @layer components {
   .nav-style {
-    @apply p-3 md:w-64 hover:bg-accent hover:text-secondary bg-secondary text-accent;
+    @apply px-6 py-3 font-semibold tracking-wider hover:bg-accent hover:text-secondary bg-secondary text-accent;
+  }
+  .menu-dropdown-content {
+    @apply hidden group-hover:block absolute text-accent bg-secondary hover:bg-accent hover:text-secondary;
   }
 }
 
