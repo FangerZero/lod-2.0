@@ -419,104 +419,86 @@ video {
   display: none;
 }
 
-/*Custom Bullet Points*/
-
---list-red: url("../public/images/bullets/DS_Red-Eye.webp");
-
---list-darkness: url("../public/images/bullets/DS_Darkness.webp");
-
---list-jade: url("../public/images/bullets/DS_Red-Eye.webp");
-
---list-silver: url("../public/images/bullets/DS_Red-Eye.webp");
-
---list-violet: url("../public/images/bullets/DS_Red-Eye.webp");
-
---list-blue: url("../public/images/bullets/DS_Red-Eye.webp");
-
---list-gold: url("../public/images/bullets/DS_Red-Eye.webp");
-
---list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
-
 [data-theme="default"] {
   /*Nav Bar*/
-  --nav-bar-bg: indigo;
-  --nav-bar-bg-admin: darkblue;
-  --nav-bar-bg-hover: Aquamarine ;
-  --nav-bar-bg-hover-dd: darkorange;
-  --nav-bar-color: deeppink;
-  --nav-bar-color-hover: teal;
-  --nav-bar-color-hover-dd: darkred;
-  /*Body*/
-  --body-bg: white;
-  --body-bg-alt: indigo;
-  --card-bg: darkblue;
-  --card-bg-alt: teal;
-  --body-color: black;
-  --body-link-color: indigo;
-  --list-image: var(--list-red);
+  --primary: white;
+  --secondary: gray;
+  --tertiary: #A9A9A9 ;
+  --accent: black;
 }
 
 [data-theme="darkness"] {
-  /*
-      000000  black
-      2a285a  indigo (darker than indigo)
-      333330  Gray
-      711e15  redish accent???  or  803d36  redish accent
-      676278  Light Gray
-      8bb48f  Wing Color 1
-      9db55f  Wing Color 2
-      eceea9  Wing Color 3
-      ffffff  White
-      FFD700  Gold Accent (non Dragoon Form)
-    */
-  /*Nav Bar*/
-  --nav-bar-bg: #676278;
-  --nav-bar-bg-admin: #333330;
-  --nav-bar-bg-hover: #8bb48f;
-  --nav-bar-bg-hover-dd: #9db55f;
-  --nav-bar-color: #FFD700;
-  --nav-bar-color-hover: #711e15;
-  --nav-bar-color-hover-dd: #eceea9;
-  /*Body*/
-  --body-bg: #2a285a;
-  --body-bg-alt: #676278;
-  --card-bg: #333330;
-  --card-bg-alt: #711e15;
-  --body-color: #ffffff;
-  --body-link-color: #676278;
-  --list-image: url("../public/images/bullets/DS_Darkness.webp");
+  --primary: #2A285A;
+  --secondary: #7B73AE;
+  --tertiary: #D4C9FF;
+  --accent: #C80046;
+  /*Custom Bullet Points*/
+  --list-image: var(--list-darkness);
 }
 
 [data-theme="red"] {
-  /*
-      000000  Black
-      cc3333  light red
-      993300  med red
-      660000  dark red
-      30662f  dark green
-      85a65c  Wing Color 1
-      8db71f  Wing Color 2
-      e0eb68  Wing Color 3
-      333333  dark gray
-      ffffff  White
-    */
-  /*Nav Bar*/
-  --nav-bar-bg: #660000;
-  --nav-bar-bg-admin: #993300;
-  --nav-bar-bg-hover: #85a65c;
-  --nav-bar-bg-hover-dd: #8db71f;
-  --nav-bar-color: #30662f;
-  --nav-bar-color-hover: #333333;
-  --nav-bar-color-hover-dd: #e0eb68;
-  /*Body*/
-  --body-bg: #cc3333;
-  --body-bg-alt: #660000;
-  --card-bg: #993300;
-  --card-bg-alt: #333333;
-  --btn-bg-hover: white;
-  --body-color: #ffffff;
-  --body-link-color: #660000;
-  --list-image: url("../public/images/bullets/DS_Red-Eye.webp");
+  --primary: #FF3600;
+  --secondary: #b50000;
+  --tertiary: #ff4e1a;
+  --accent: #1c9c00;
+  /*Custom Bullet Point*/
+  --list-image: var(--list-red);
+}
+
+[data-theme="jade"] {
+  --primary: #00A36C;
+  --secondary: #00471a;
+  --tertiary: #7efec0;
+  /*#00471a;*/
+  --accent: #c67f00;
+  /*Custom Bullet Point*/
+  --list-image: var(--list-jade);
+}
+
+[data-theme="silver"] {
+  --primary: #fdfff1;
+  --secondary: #f6f5ee;
+  --tertiary: #dfdfdf;
+  --accent: #cc4a29;
+  /*Teal: #00c9cd, Red: cc4a29*/
+  /*Custom Bullet Point*/
+  --list-image: var(--list-silver);
+}
+
+[data-theme="violet"] {
+  --primary: #a539ff;
+  --secondary: #e274ff;
+  --tertiary: #ffadff;
+  --accent: #00A36C;
+  /*Custom Bullet Point*/
+  --list-image: var(--list-violet);
+}
+
+[data-theme="blue-sea"] {
+  --primary: #00BEFF;
+  --secondary: #0072ad;
+  --tertiary: #002f62;
+  --accent: #FFD700;
+  /*Custom Bullet Point*/
+  --list-image: var(--list-blue-sea);
+}
+
+[data-theme="gold"] {
+  --primary: #c9a800;
+  --secondary: #957b00;
+  --tertiary: #ffd700;
+  --accent: #542D62;
+  /*Custom Bullet Point*/
+  --list-image: var(--list-gold);
+}
+
+[data-theme="divine"] {
+  --primary: #B5B5B5;
+  --secondary: #00A36C;
+  --tertiary: #454545;
+  --accent: #FF3600;
+  /*Custom Bullet Point*/
+  --list-image: var(--list-divine);
 }
 
 *, ::before, ::after {
@@ -613,35 +595,112 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.btn-style {
-  border-width: 1px;
-  border-color: var(--card-bg-alt);
-  background-color: var(--card-bg);
+.nav-style {
+  background-color: var(--secondary);
   padding: 0.75rem;
+  color: var(--accent);
 }
 
-.btn-style:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+.nav-style:hover {
+  background-color: var(--bprimary);
 }
 
 @media (min-width: 768px) {
-  .btn-style {
+  .nav-style {
     width: 16rem;
-  }
-
-  .btn-style:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(100 116 139 / var(--tw-bg-opacity));
   }
 }
 
-.bg-nav-bar {
-  background-color: var(--nav-bar-bg);
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-accent {
+  border-color: var(--accent);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 html,
 body {
+  /*Generic Colors*/
+  --black: #000000;
+  --grey: #787878;
+  --white: #FFFFFF;
+  /*Custom Bullet Points*/
+  --list-red: url("../public/images/bullets/DS_Red-Eye.webp");
+  --list-darkness: url("../public/images/bullets/DS_Red-Eye.webp");
+  --list-jade: url("../public/images/bullets/DS_Red-Eye.webp");
+  --list-silver: url("../public/images/bullets/DS_Red-Eye.webp");
+  --list-violet: url("../public/images/bullets/DS_Red-Eye.webp");
+  --list-blue: url("../public/images/bullets/DS_Red-Eye.webp");
+  --list-gold: url("../public/images/bullets/DS_Red-Eye.webp");
+  --list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
+  --list-image: var(--list-red);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -656,4 +715,26 @@ a {
 ul {
   list-style-position: inside;
   list-style-image: var(--list-image);
+}
+
+@media (min-width: 768px) {
+  .md\:m-5 {
+    margin: 1.25rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
 }

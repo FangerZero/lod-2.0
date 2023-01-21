@@ -7,21 +7,19 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'nav-bar': 'var(--nav-bar-bg)',
-        'nav-bar-admin': 'var(--nav-bar-bg-admin)',
-        'nav-bar-hover': 'var(--nav-bar-bg-hover)',
-        'nav-bar-hover-dd': 'var(--nav-bar-bg-hover-dd)',
-        'primary': 'var(--body-bg)',
-        'secondary': 'var(--card-bg)'
+        'primary': 'var(--bprimary)',
+        'secondary': 'var(--secondary)',
+        'accent': 'var(--accent)',
       },
       borderColor: {
-        'primary': 'var(--body-bg-alt)',
-        'secondary': 'var(--card-bg-alt)',
+        'primary': 'var(--primary)',
+        'secondary': 'var(--secondary)',
+        'accent': 'var(--accent)',
       },
       textColor: {
-        'nav-bar': 'var(--nav-bar-color)',
-        'nav-bar-hover': 'var(--nav-bar-color-hover)',
-        'nav-bar-hover-dd': 'var(--nav-bar-color-hover-dd)',
+        'primary': 'var(--primary)',
+        'secondary': 'var(--secondary)',
+        'accent': 'var(--accent)',
       }
     },
   },
