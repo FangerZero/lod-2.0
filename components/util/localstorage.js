@@ -9,8 +9,6 @@ export const saveToStorage = (key, value) => {
   // get from storage
 export const getFromStorage = (key) => {
     if (typeof window !== 'undefined') {
-        console.log('window.localStorage.getItem(key): ', window.localStorage.getItem(key));
-        // return window.localStorage.getItem(key);
-        return false;
+        return window.localStorage.getItem(key) || 'default';
     }
   }
