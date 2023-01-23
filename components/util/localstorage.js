@@ -1,7 +1,6 @@
   // save to storage
 export const saveToStorage = (key, value) => {
     if(typeof window !== 'undefined') {
-        console.log(key, ': ', value);
         return window.localStorage.setItem(key, value);
     }
   }

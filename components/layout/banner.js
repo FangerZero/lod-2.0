@@ -5,7 +5,7 @@ import Theme from './theme'
 export default function Banner() {
   return (
     <>
-      <Image src={banner} alt="Banner of Rose & Dart in dragoon form." className="w-screen"/>
+      <Image src={banner} alt="Banner of Rose & Dart in dragoon form." className="hidden md:block md:w-screen"/>
       <Theme />
     </>
   )

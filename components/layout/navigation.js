@@ -1,4 +1,5 @@
-import {saveToStorage} from '../util/localstorage';
+import {saveToStorage} from '../util/localstorage'
+import Link from 'next/link'
 
 export default function Banner() {
   const setTheme = (e) => {
@@ -8,35 +9,42 @@ export default function Banner() {
 
   return (
     <nav className="sticky top-0 bg-secondary hidden md:flex md:flex-row items-center justify-center">
-      <button className="nav-style" onClick={e => setTheme(e)} value="default">default</button>
-      <button className="nav-style" onClick={e => setTheme(e)} value="red">Red</button>
+      <Link className="nav-style" href="/">Home</Link>
+      <Link className="nav-style" href="/news">News</Link>
+    
       <div className="group">
-        <button className="nav-style" onClick={e => setTheme(e)} value="darkness">Darkness</button>
-        <div className="menu-dropdown-content nav-style">
-          <button>Hello</button>
+        <div className="nav-style">Game</div>
+        <div className="menu-dropdown-content">
+          <Link className="nav-style" href="/game/characters">Characters</Link>
+          <Link className="nav-style" href="/game/map">Map</Link>
+          <Link className="nav-style" href="/game/timeline">Timeline</Link>
+          <Link className="nav-style" href="/game/misc-facts">Miscelaneous Facts</Link>
         </div>
       </div>
-      <button className="nav-style" onClick={e => setTheme(e)} value="jade">Jade</button>
-      <button className="nav-style" onClick={e => setTheme(e)} value="silver">Silver</button>
-      <button className="nav-style" onClick={e => setTheme(e)} value="violet">Violet</button>
+
       <div className="group">
-      <button className="nav-style" onClick={e => setTheme(e)} value="blue-sea">Blue-sea</button>
-        <div className="menu-dropdown-content nav-style">
-          <button>Hello</button>
+        <div className="nav-style">Community</div>
+        <div className="menu-dropdown-content">
+          <Link className="nav-style" href="/community/petition">Petition</Link>
+          <Link className="nav-style" href="/community/projects">Projects</Link>
+          <Link className="nav-style" href="/community/fan-art">Fan Art</Link>
+          <Link className="nav-style" href="/community/forum">Forum</Link>
+          <Link className="nav-style" href="/community/speedruns">Speedruns</Link>
+          <Link className="nav-style" href="/community/credits">Credits</Link>
         </div>
       </div>
-      <button className="nav-style" onClick={e => setTheme(e)} value="gold">Gold</button>
-      <button className="nav-style" onClick={e => setTheme(e)} value="divine">Divine</button>
+      
+      <div className="group">
+        <div className="nav-style">Resources</div>
+        <div className="menu-dropdown-content">
+          <Link className="nav-style" href="/resources/downloads">Downloads</Link>
+          <Link className="nav-style" href="/resources/guides">Guides</Link>
+          <Link className="nav-style" href="https://legendofdragoon.org/wiki/index.php/Main_Page">Wiki</Link>
+          <Link className="nav-style" href="/resources/damage-calculator">Damage Calculator</Link>
+          <Link className="nav-style" href="/resources/contact">Contact</Link>
+          <Link className="nav-style" href="/resources/archives">Archives</Link>
+        </div>
+      </div>
     </nav>
   )
 }
-/*
-                <div className={styles['dropdown-content']}>
-                    <Link className={styles.drpdwnbtn} href="/community/petition">Petition</Link>
-                    <Link className={styles.drpdwnbtn} href="/community/projects">Projects</Link>
-                    <Link className={styles.drpdwnbtn} href="/community/fan-art">Fan Art</Link>
-                    <Link className={styles.drpdwnbtn} href="/community/forum">Forum</Link>
-                    <Link className={styles.drpdwnbtn} href="/community/speedruns">Speedruns</Link>
-                    <Link className={styles.drpdwnbtn} href="/community/credits">Credits</Link>
-                </div>
-*/

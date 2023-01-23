@@ -618,13 +618,9 @@ video {
   color: var(--accent);
 }
 
-.menu-dropdown-content:hover {
-  background-color: var(--accent);
-  color: var(--secondary);
-}
-
 .group:hover .menu-dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-wrapper {
@@ -740,10 +736,6 @@ video {
   padding: 0.75rem;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -768,10 +760,6 @@ video {
 
 .left-0 {
   left: 0px;
-}
-
-.float-right {
-  float: right;
 }
 
 .m-2 {
@@ -800,10 +788,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .flex-1 {
@@ -838,10 +822,6 @@ video {
   border-top-width: 2px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-accent {
   border-color: var(--accent);
 }
@@ -864,10 +844,6 @@ video {
 
 .p-0 {
   padding: 0px;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-5 {
@@ -936,8 +912,16 @@ ul {
     margin-top: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:w-screen {
+    width: 100vw;
   }
 
   .md\:flex-row {
