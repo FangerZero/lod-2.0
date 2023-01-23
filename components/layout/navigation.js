@@ -1,12 +1,6 @@
-import {saveToStorage} from '../util/localstorage'
 import Link from 'next/link'
 
 export default function Banner() {
-  const setTheme = (e) => {
-    saveToStorage('data-theme', e.target.value);
-    return document.documentElement.setAttribute('data-theme', e.target.value);
-  };
-
   return (
     <nav className="sticky top-0 bg-secondary hidden md:flex md:flex-row items-center justify-center">
       <Link className="nav-style" href="/">Home</Link>
