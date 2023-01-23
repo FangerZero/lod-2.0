@@ -30,17 +30,17 @@ export default function Theme() {
 
   return (
     <div className="absolute m-0 p-0 inset-x-0 inset-y-0 left-0"> 
-      <Image className="m-1" src={spirits[currentColor]} alt="Current Theme" width="13" height="13" onClick={() => setShowSpirits(true)}/>
+      <Image className="m-1 hover:cursor-pointer" src={spirits[currentColor]} alt="Current Theme" width="13" height="13" onClick={() => setShowSpirits(!showSpirits)}/>
       <div className={showSpirits ? "flex flex-1" : "hidden"}>
-          <Image className="m-1" src={spirits.default} alt="Default Theme" width="13" height="13" onClick={() => setTheme("default")}/>
-          <Image className="m-1" src={spirits.red} alt="Red-Eye Dragoon Spirit Theme" width="13" height="13" onClick={() => setTheme("red")}/>
-          <Image className="m-1" src={spirits.darkness} alt="Darkness Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("darkness")}/>
-          <Image className="m-1" src={spirits.jade} alt="Jade Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("jade")}/>
-          <Image className="m-1" src={spirits.silver} alt="White Silver Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("silver")}/>
-          <Image className="m-1" src={spirits.violet} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("violet")}/>
-          <Image className="m-1" src={spirits['blue-sea']} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("blue-sea")}/>
-          <Image className="m-1" src={spirits.gold} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("gold")}/>
-          <Image className="m-1" src={spirits.divine} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("divine")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.default} alt="Default Theme" width="13" height="13" onClick={() => setTheme("default")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.red} alt="Red-Eye Dragoon Spirit Theme" width="13" height="13" onClick={() => setTheme("red")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.darkness} alt="Darkness Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("darkness")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.jade} alt="Jade Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("jade")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.silver} alt="White Silver Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("silver")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.violet} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("violet")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits['blue-sea']} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("blue-sea")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.gold} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("gold")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.divine} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("divine")}/>
       </div>
     </div>
   )

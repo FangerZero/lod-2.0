@@ -903,6 +903,10 @@ ul {
   list-style-image: var(--list-image);
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .md\:m-5 {
     margin: 1.25rem;
