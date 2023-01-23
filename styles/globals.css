@@ -97,14 +97,11 @@
   .modal-wrapper {
     @apply fixed m-0 p-0 inset-x-0 inset-y-0 left-0 w-full h-full bg-gray-500/50;
   }
-  .modal-title {
-    @apply font-bold;
-  }
   .modal-close {
-    @apply fixed md:absolute inset-y-0 right-0 top-0 h-fit p-3 hover:cursor-pointer;
+    @apply fixed md:absolute inset-y-0 right-0 top-0 h-fit p-3 pt-0 hover:cursor-pointer float-left;
   }
   .modal {
-    @apply fixed md:relative md:rounded p-3 bg-secondary w-full md:w-1/2 h-full md:h-1/2 md:top-1/4 md:left-1/4 md:shadow-md md:shadow-accent;
+    @apply fixed md:relative md:rounded px-5 pt-2 pb-5 bg-secondary w-full md:w-1/2 h-full md:h-1/2 md:top-1/4 md:left-1/4 md:shadow-md md:shadow-accent;
   }
   .btn {
     @apply rounded w-fit p-3 m-3 bg-secondary border-accent border-2 hover:cursor-pointer;

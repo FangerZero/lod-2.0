@@ -20,7 +20,7 @@ export default function Modal(props) {
     return (
         <div className={props.modal ? 'modal-wrapper' : 'hidden'} >
             <div className="modal">
-                {props.title && <span className="modal-title">{props.title}</span>}
+                {props.title && <span className="font-bold">{props.title}</span>}
                 <span className="modal-close" onClick={() => props.toggleModal(!props.modal)}>X</span>
                 <div>
                     {props.children && props.children}
