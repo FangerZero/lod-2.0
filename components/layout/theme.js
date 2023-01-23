@@ -29,7 +29,7 @@ export default function Theme() {
   };
 
   return (
-    <div className="absolute m-0 p-0 inset-x-0 inset-y-0 left-0 w-fit h-fit"> 
+    <div className="hidden md:block absolute m-0 p-0 inset-x-0 inset-y-0 left-0 w-fit h-fit"> 
       <Image className="m-1 hover:cursor-pointer" src={spirits[currentColor]} alt="Current Theme" width="13" height="13" onClick={() => setShowSpirits(!showSpirits)}/>
       <div className={showSpirits ? "flex flex-1" : "hidden"}>
           <Image className="m-1 hover:cursor-pointer" src={spirits.default} alt="Default Theme" width="13" height="13" onClick={() => setTheme("default")}/>
