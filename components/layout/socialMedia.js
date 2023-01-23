@@ -29,7 +29,7 @@ export default function SocialMedia() {
             <Image src={instagram} alt="Instagram logo linked to Instagram" width={iconSize} height={iconSize}/>
         </Link>
         <Link className="m-2 md:m-5" href="https://discord.gg/rQWXgK5">
-            <Image src={discord} alt="Discord logo linked to Discord" width={iconSize} height={iconSize}/>
+            <Image src={discord} alt="Discord logo linked to Discord" width={iconSize} height="auto" />
         </Link>
         <Link className="m-2 md:m-5" href="https://legendofdragoon.org/feed/">
             <Image src={feed} alt="Feed logo linked to Feed" width={iconSize} height={iconSize}/>
