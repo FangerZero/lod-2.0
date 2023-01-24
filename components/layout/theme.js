@@ -29,12 +29,12 @@ export default function Theme() {
   };
 
   return (
-    <div className="hidden md:block absolute m-0 p-0 inset-x-0 inset-y-0 left-0 w-fit h-fit"> 
-      <Image className="m-1 hover:cursor-pointer" src={spirits[currentColor]} alt="Current Theme" width="13" height="13" onClick={() => setShowSpirits(!showSpirits)}/>
-      <div className={showSpirits ? "flex flex-1" : "hidden"}>
+    <div className="hidden md:block absolute m-0 p-0 inset-x-0 inset-y-0 left-0 w-fit h-fit" data-cy="theme"> 
+      <Image className="m-1 hover:cursor-pointer" src={spirits[currentColor]} alt="Current Theme" width="13" height="13" onClick={() => setShowSpirits(!showSpirits)} data-cy="current"/>
+      <div className={showSpirits ? "flex flex-1" : "hidden"}  data-cy="spirits">
           <Image className="m-1 hover:cursor-pointer" src={spirits.default} alt="Default Theme" width="13" height="13" onClick={() => setTheme("default")}/>
-          <Image className="m-1 hover:cursor-pointer" src={spirits.red} alt="Red-Eye Dragoon Spirit Theme" width="13" height="13" onClick={() => setTheme("red")}/>
-          <Image className="m-1 hover:cursor-pointer" src={spirits.darkness} alt="Darkness Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("darkness")}/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.red} alt="Red-Eye Dragoon Spirit Theme" width="13" height="13" onClick={() => setTheme("red")} data-cy="red"/>
+          <Image className="m-1 hover:cursor-pointer" src={spirits.darkness} alt="Darkness Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("darkness")} data-cy="darkness"/>
           <Image className="m-1 hover:cursor-pointer" src={spirits.jade} alt="Jade Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("jade")}/>
           <Image className="m-1 hover:cursor-pointer" src={spirits.silver} alt="White Silver Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("silver")}/>
           <Image className="m-1 hover:cursor-pointer" src={spirits.violet} alt="Red Dragoon Spirit THeme" width="13" height="13" onClick={() => setTheme("violet")}/>
