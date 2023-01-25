@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Banner />
       <Navigation />
-      <main className="h-screen">
+      <main className="min-h-screen">
         <Component {...pageProps} />
       </main>
       <Footer />
