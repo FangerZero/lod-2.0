@@ -25,6 +25,9 @@ module.exports = {
         'primary': 'var(--primary)',
         'secondary': 'var(--secondary)',
         'accent': 'var(--accent)',
+      },
+      zIndex: {
+        'nav': '100',
       }
     },
   },
