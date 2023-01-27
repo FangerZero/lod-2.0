@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Banner() {
+export default function Navigation() {
   return (
     <nav className="sticky top-0 bg-secondary hidden md:flex md:flex-row items-center justify-center z-nav">
       <Link className="nav-style" href="/">Home</Link>
