@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'primary': 'var(--bprimary)',
+        'primary': 'var(--primary)',
         'secondary': 'var(--secondary)',
         'accent': 'var(--accent)',
       },
