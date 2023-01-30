@@ -12,9 +12,9 @@ export default function Miscelaneous() {
     <>
       <Header title="Miscelaneous" description="Facts Page" />
       <div className="md:justify-center flex flex-row flex-wrap mt-5">
-        <div className={`rounded-l ${commonClassName}`} onClick={() => setViewType('misc')}>Miscelaneous Facts</div>
-        <div className={commonClassName} onClick={() => setViewType('promos')}>Promotions</div>
-        <div className={`rounded-r ${commonClassName}`} onClick={() => setViewType('merch')}>Merchandise</div>
+        <div className={`rounded-l ${commonClassName}`} onClick={() => setViewType('misc')} data-cy="misc-btn">Miscelaneous Facts</div>
+        <div className={commonClassName} onClick={() => setViewType('promos')} data-cy="promo-btn">Promotions</div>
+        <div className={`rounded-r ${commonClassName}`} onClick={() => setViewType('merch')} data-cy="merch-btn">Merchandise</div>
       </div>
       <div className="md:justify-center flex flex-row flex-wrap mt-5">
         {(viewType === 'merch') && <Merch />}
