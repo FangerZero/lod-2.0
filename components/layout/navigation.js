@@ -22,7 +22,7 @@ export default function Navigation() {
           <Link className="nav-style" href="/community/petition" data-cy="nav-petition">Petition</Link>
           <Link className="nav-style" href="/community/projects" data-cy="nav-projects">Projects</Link>
           <Link className="nav-style" href="/community/fan-art" data-cy="nav-fanart">Fan Art</Link>
-          <Link className="nav-style" href="/community/forum" data-cy="nav-forum">Forum</Link>
+          <Link className="nav-style" href="https://legendofdragoon.org/forum/" data-cy="nav-forum">Forum</Link>
           <Link className="nav-style" href="/community/speedruns" data-cy="nav-speedruns">Speedruns</Link>
           <Link className="nav-style" href="/community/credits" data-cy="nav-credits">Credits</Link>
         </div>
