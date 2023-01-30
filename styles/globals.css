@@ -109,6 +109,9 @@
   .card {
     @apply rounded w-fit m-3 p-3 bg-secondary;
   }
+  .text-box {
+    @apply rounded border border-accent m-3;
+  }
 }
 
 html,
