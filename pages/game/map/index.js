@@ -3,7 +3,7 @@ import path from 'path';
 import Header from '../../../components/layout/header'
 import Image from 'next/image'
 import worldMap from '../../../public/images/game/endiness.webp'
-import { useRef, useState, useEffect, useLayoutEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import Link from 'next/link'
 
 export default function Map(props) {
