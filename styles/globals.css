@@ -112,6 +112,9 @@
   .text-box {
     @apply rounded border border-accent m-3;
   }
+  .text-box-invalid {
+    @apply rounded border-8 border-secondary m-3;
+  }
 }
 
 html,

@@ -749,6 +749,13 @@ video {
   border-color: var(--accent);
 }
 
+.text-box-invalid {
+  margin: 0.75rem;
+  border-radius: 0.25rem;
+  border-width: 8px;
+  border-color: var(--secondary);
+}
+
 .absolute {
   position: absolute;
 }
