@@ -1,10 +1,6 @@
 import Header from '../../components/layout/header'
-import Merch from '../../components/game/merch'
-import Misc from '../../components/game/misc'
-import Promos from '../../components/game/promos'
-import { useState } from 'react'
 
-export default function Miscelaneous() {
+export default function Timeline() {
   return (
     <>
       <Header title="Timeline" description="Timeline information" />
