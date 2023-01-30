@@ -1,0 +1,312 @@
+[
+    {
+        "link": "vellweb",
+        "name": "Vellweb",
+        "coordinates": [398, 346],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "fort-magrad",
+        "name": "Fort Magrad",
+        "coordinates": [498, 466],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "flanvel-tower",
+        "name": "Tower of Flanvel",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "deningrad",
+        "name": "Deningrad",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "mortal-dragon-mt",
+        "name": "Mortal Dragon Mountain",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "neet",
+        "name": "Neet",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "furni",
+        "name": "Furni",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "fueno",
+        "name": "Fueno",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "undersea-cavern",
+        "name": "Undersea Cavern",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "prison-island",
+        "name": "Prison Island",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "lidiera",
+        "name": "Lidiera",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "home-of-gigantos",
+        "name": "Home of Gigantos",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "fletz",
+        "name": "Fletz",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "donau",
+        "name": "Donau",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "bale",
+        "name": "Bale",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "hoax",
+        "name": "Hoax",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "seles",
+        "name": "Seles",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "volcano-mt-villude",
+        "name": "Volcano Mt. Villude",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "lohan",
+        "name": "Lohan",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "kazas",
+        "name": "Kazas",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "hellena-prison",
+        "name": "Hellena Prison",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "rogue",
+        "name": "Rogue",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "aglis",
+        "name": "Aglis",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "shrine-of-shirley",
+        "name": "Shrine of Shirley",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "valley-of-corrupted-gravity",
+        "name": "Valley of Corrupted Gravity",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "ruvra-bay",
+        "name": "Ruvra Bay",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "the-straights-of-alter",
+        "name": "The Straights of Alter",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "broken-island",
+        "name": "Broken Island",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "aquaria-coral-reef",
+        "name": "Aquaria Coral Reef",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "nissel",
+        "name": "Nissel",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    },
+    {
+        "link": "seilnder",
+        "name": "seilnder",
+        "coordinates": [0, 0],
+        "size": [20,20],
+        "bgm": "",
+        "bgmLink": "",
+        "imgDir": "",
+        "description": ""
+    }
+  ]
