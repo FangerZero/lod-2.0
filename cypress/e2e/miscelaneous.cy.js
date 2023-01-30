@@ -1,5 +1,5 @@
-describe('template spec', () => {
-  it('passes', () => {
+describe('Miscelaneous Page', () => {
+  it('Check Switching View functionality', () => {
     cy.visit('localhost:3000/game/miscelaneous')
     cy.get('[data-cy="misc-btn"]').should('exist')
     cy.get('[data-cy="promo-btn"]').should('exist')
