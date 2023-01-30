@@ -28,14 +28,14 @@ export default function DamageCalculator(props) {
       <div>
         <Header title="Damage Calculator" description="Timeline information" />
         Level: <input className="text-box" type="number" min="1" max="99" required id="level" name="level" onChange={(e) => fillData("level", e.target.value)} data-cy="level"/>
-        Attack Stat: <input className="text-box" type="text" id="attack" name="attack" onChange={(e) => fillData("attack", e.target.value)}  data-cy="attack"/>
-        Addition Dmg%: <input className="text-box" type="number" min="100" max="500" id="addition" name="addition" onChange={(e) => fillData("addition", e.target.value)}  data-cy="addition"/>
+        Attack Stat: <input className="text-box" type="text" id="attack" name="attack" onChange={(e) => fillData("attack", e.target.value)} data-cy="attack"/>
+        Addition Dmg%: <input className="text-box" type="number" min="100" max="500" id="addition" name="addition" onChange={(e) => fillData("addition", e.target.value)} data-cy="addition"/>
         Enemy: 
-            <select className="text-box" id="enemy" name="enemy" onChange={(e) => fillData("enemy", e.target.value)}>
+            <select className="text-box" id="enemy" name="enemy" onChange={(e) => fillData("enemy", e.target.value)} data-cy="enemy">
                 {enemies.map(enemy => <option key={enemy.name} value={enemy.defense}>{enemy.name}</option>)}
             </select>
-        <div>Base Damage: {calculateDmg("base")}</div>
-        <div>Completed Addition Damage: {calculateDmg()}</div>
+        <div data-cy="base-dmg">Base Damage: {calculateDmg("base")}</div>
+        <div data-cy="addition-dmg">Completed Addition Damage: {calculateDmg()}</div>
       </div>
     )
   }
