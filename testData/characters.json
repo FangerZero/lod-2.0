@@ -2,12 +2,281 @@
     {
         "link": "rose",
         "name": "Rose",
-        "type": "Playable"
+        "type": "Player",
+        "element": "Dark",
+        "additions": [
+            {
+                "name": "Whip Smack",
+                "info": "This addition is available at character level 7.",
+                "gif": "",
+                "hits": 4,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [100, 50],
+                        "sp": 35
+                    },{
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 125,
+                        "sp": 35
+                    },{
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 150,
+                        "sp": 35
+                    },{
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 175,
+                        "sp": 35
+                    },{
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 200,
+                        "sp": 35
+                    }
+                ]}
+        ],
+        "dragoon": [
+            {
+                "name": "Darkness Dragoon Spirit",
+                "element": "Dark",
+                "fullbody": "",
+                "transformation": "",
+                "physical-attack": "",
+                "levels": [
+                    {
+                        "level": 1,
+                        "sp-req": 0,
+                        "mp": 20,
+                        "spell": "Astral Drain",
+                        "gif": "",
+                        "attack": 150,
+                        "defense": 200,
+                        "magic-attack": 150,
+                        "magic-defense": 200
+                    },
+                    {
+                        "level": 2,
+                        "sp-req": 1200,
+                        "mp": 40,
+                        "spell": "Death Dimension",
+                        "gif": "",
+                        "attack": 155,
+                        "defense": 210,
+                        "magic-attack": 155,
+                        "magic-defense": 210
+                    },
+                    {
+                        "level": 3,
+                        "sp-req": 6000,
+                        "mp": 60,
+                        "spell": "Demon's Gate",
+                        "gif": "",
+                        "attack": 165,
+                        "defense": 220,
+                        "magic-attack": 160,
+                        "magic-defense": 220
+                    },
+                    {
+                        "level": 4,
+                        "sp-req": 12000,
+                        "mp": 80,
+                        "spell": "",
+                        "gif": "",
+                        "attack": 165,
+                        "defense": 230,
+                        "magic-attack": 165,
+                        "magic-defense": 230
+                    },
+                    {
+                        "level": 5,
+                        "sp-req": 20000,
+                        "mp": 100,
+                        "spell": "Darkness Dragon",
+                        "gif": "",
+                        "attack": 170,
+                        "defense": 250,
+                        "magic-attack": 170,
+                        "magic-defense": 250
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "link": "meru",
+        "name": "Meru",
+        "type": "Player",
+        "element": "Water",
+        "additions": [
+            {
+                "name": "Whip Smack",
+                "info": "This addition is available at character level 7.",
+                "gif": "",
+                "hits": 4,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [100, 50],
+                        "sp": 35
+                    },{
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 125,
+                        "sp": 35
+                    },{
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 150,
+                        "sp": 35
+                    },{
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 175,
+                        "sp": 35
+                    },{
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 200,
+                        "sp": 35
+                    }
+                ]}
+        ],
+        "dragoon": [
+            {
+                "name": "Deep-Sea Dragoon Spirit",
+                "element": "Water",
+                "fullbody": "",
+                "transformation": "",
+                "physical-attack": "",
+                "levels": [
+                    {
+                        "level": 1,
+                        "sp-req": 0,
+                        "spell": "Freezing Ring",
+                        "gif": "",
+                        "attack": 200,
+                        "defense": 200,
+                        "magic-attack": 150,
+                        "magic-defense": 200
+                    },
+                    {
+                        "level": 2,
+                        "sp-req": 1000,
+                        "spell": "Rainbow Breath",
+                        "gif": "",
+                        "attack": 205,
+                        "defense": 210,
+                        "magic-attack": 155,
+                        "magic-defense": 210
+                    },
+                    {
+                        "level": 3,
+                        "sp-req": 2000,
+                        "spell": "Diamond Dust",
+                        "gif": "",
+                        "attack": 210,
+                        "defense": 220,
+                        "magic-attack": 160,
+                        "magic-defense": 220
+                    },
+                    {
+                        "level": 4,
+                        "sp-req": 12000,
+                        "spell": "",
+                        "gif": "",
+                        "attack": 215,
+                        "defense": 230,
+                        "magic-attack": 155,
+                        "magic-defense": 230
+                    },
+                    {
+                        "level": 5,
+                        "sp-req": 20000,
+                        "spell": "Blue Sea Dragon",
+                        "gif": "",
+                        "attack": 220,
+                        "defense": 250,
+                        "magic-attack": 160,
+                        "magic-defense": 250
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "link": "lavitz",
+        "name": "Lavitz",
+        "type": "Player",
+        "element": "Wind",
+        "additions": [
+            {
+                "name": "Rod Typhoon",
+                "info": "This addition is available at character level 7.",
+                "gif": "",
+                "hits": 4,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 150,
+                        "hits": [100, 50],
+                        "sp": 30
+                    },{
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 162,
+                        "sp": 45
+                    },{
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 174,
+                        "sp": 60
+                    },{
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 186,
+                        "sp": 75
+                    },{
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 202,
+                        "sp": 100
+                    }
+                ]}
+        ],
+        "dragoon": [
+            {
+                "name": "Jade Dragoon Spirit",
+                "element": "Wind",
+                "fullbody": "",
+                "transformation": "",
+                "physical-attack": "",
+                "levels": [
+                    {
+                        "level": 1,
+                        "sp-req": 0,
+                        "spell": "Wing Blaster",
+                        "gif": "",
+                        "attack": 150,
+                        "defense": 200,
+                        "magic-attack": 200,
+                        "magic-defense": 200
+                    }
+                ]
+            }
+        ]
     },
     {
         "link": "dart-feld",
         "name": "Dart Feld",
-        "type": "Playable",
+        "type": "Player",
         "age": 23,
         "height-cm": 178,
         "height-ft": "5'10\"",
@@ -30,6 +299,7 @@
                         "level": 1,
                         "completions": 0,
                         "damage": 150,
+                        "hits": [100, 50],
                         "sp": 35
                     },{
                         "level": 2,
@@ -55,36 +325,36 @@
                 ]
             },
             {
-                "name": "Volcano-WIP",
-                "info": "This addition is available at the start of the game.",
+                "name": "Volcano",
+                "info": "This addition is available at character level 2.",
                 "gif": "",
                 "hits": 2,
                 "levels": [
                     {
                         "level": 1,
                         "completions": 0,
-                        "damage": 0,
-                        "sp": 0
+                        "damage": 200,
+                        "sp": 20
                     },{
                         "level": 2,
                         "completions": 20,
-                        "damage": 0,
-                        "sp": 0
+                        "damage": 210,
+                        "sp": 24
                     },{
                         "level": 3,
                         "completions": 40,
-                        "damage": 0,
-                        "sp": 0
+                        "damage": 220,
+                        "sp": 28
                     },{
                         "level": 4,
                         "completions": 60,
-                        "damage": 0,
-                        "sp": 0
+                        "damage": 230,
+                        "sp": 32
                     },{
                         "level": 5,
                         "completions": 80,
-                        "damage": 0,
-                        "sp": 0
+                        "damage": 250,
+                        "sp": 36
                     }
                 ]
             },
@@ -261,6 +531,47 @@
                         "defense": 200,
                         "magic-attack": 150,
                         "magic-defense": 200
+                    },
+                    {
+                        "level": 2,
+                        "sp-req": 0,
+                        "spell": "Explosion",
+                        "gif": "",
+                        "attack": 155,
+                        "defense": 210,
+                        "magic-attack": 155,
+                        "magic-defense": 210
+                    },
+                    {
+                        "level": 3,
+                        "sp-req": 0,
+                        "spell": "Final Burst",
+                        "gif": "",
+                        "attack": 160,
+                        "defense": 220,
+                        "magic-attack": 160,
+                        "magic-defense": 220
+                    },
+                    {
+                        "level": 4,
+                        "sp-req": 0,
+                        "spell": "",
+                        "gif": "",
+                        "attack": 165,
+                        "defense": 230,
+                        "magic-attack": 165,
+                        "magic-defense": 230
+                    },
+                    {
+                        "level": 5,
+                        "sp-req": 20000,
+                        "mp": 100,
+                        "spell": "Red-Eye Dragon",
+                        "gif": "",
+                        "attack": 170,
+                        "defense": 250,
+                        "magic-attack": 170,
+                        "magic-defense": 250
                     }
                 ]
             },

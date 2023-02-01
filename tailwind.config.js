@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      accentColor: {
+        'primary': 'var(--primary)',
+        'secondary': 'var(--secondary)',
+        'accent': 'var(--accent)',
+      },
       backgroundColor: {
         'primary': 'var(--primary)',
         'secondary': 'var(--secondary)',
@@ -16,12 +21,12 @@ module.exports = {
         'secondary': 'var(--secondary)',
         'accent': 'var(--accent)',
       },
-      textColor: {
+      boxShadowColor: {
         'primary': 'var(--primary)',
         'secondary': 'var(--secondary)',
         'accent': 'var(--accent)',
       },
-      boxShadowColor: {
+      textColor: {
         'primary': 'var(--primary)',
         'secondary': 'var(--secondary)',
         'accent': 'var(--accent)',

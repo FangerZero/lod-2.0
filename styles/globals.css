@@ -10,6 +10,9 @@
     --secondary: gray;
     --tertiary: #A9A9A9 ;
     --accent: black;
+    
+    /*Custom Bullet Points*/
+    --list-image: var(--list-default);
   }
   [data-theme="darkness"] {
     --primary: #2A285A; 
@@ -115,6 +118,12 @@
   .text-box-invalid {
     @apply rounded border-8 border-secondary m-3;
   }
+  .check-box {
+    @apply accent-accent;
+  }
+  .damage-calc-items {
+    @apply mx-2;
+  }
 }
 
 html,
@@ -126,14 +135,14 @@ body {
 
   /*Custom Bullet Points*/
   --list-red: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-darkness: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-jade: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-silver: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-violet: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-blue: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-gold: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-image: var(--list-red);
+  --list-darkness: url("../public/images/bullets/DS_Darkness.webp");
+  --list-jade: url("../public/images/bullets/DS_Jade.webp");
+  --list-silver: url("../public/images/bullets/DS_WhiteSilver.webp");
+  --list-violet: url("../public/images/bullets/DS_Violet.webp");
+  --list-blue-sea: url("../public/images/bullets/DS_BlueSea.webp");
+  --list-gold: url("../public/images/bullets/DS_Golden.webp");
+  --list-divine: url("../public/images/bullets/DS_Divine.webp");
+  --list-default: url("../public/images/bullets/default.webp");
   
   background: var(--primary);
 

@@ -425,6 +425,8 @@ video {
   --secondary: gray;
   --tertiary: #A9A9A9 ;
   --accent: black;
+  /*Custom Bullet Points*/
+  --list-image: var(--list-default);
 }
 
 [data-theme="darkness"] {
@@ -756,6 +758,15 @@ video {
   border-color: var(--secondary);
 }
 
+.check-box {
+  accent-color: var(--accent);
+}
+
+.damage-calc-items {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .absolute {
   position: absolute;
 }
@@ -816,6 +827,11 @@ video {
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .mt-5 {
@@ -975,9 +991,18 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .font-bold {
@@ -994,6 +1019,10 @@ video {
 
 .opacity-70 {
   opacity: 0.7;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -1016,14 +1045,14 @@ body {
   --white: #FFFFFF;
   /*Custom Bullet Points*/
   --list-red: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-darkness: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-jade: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-silver: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-violet: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-blue: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-gold: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-divine: url("../public/images/bullets/DS_Red-Eye.webp");
-  --list-image: var(--list-red);
+  --list-darkness: url("../public/images/bullets/DS_Darkness.webp");
+  --list-jade: url("../public/images/bullets/DS_Jade.webp");
+  --list-silver: url("../public/images/bullets/DS_WhiteSilver.webp");
+  --list-violet: url("../public/images/bullets/DS_Violet.webp");
+  --list-blue-sea: url("../public/images/bullets/DS_BlueSea.webp");
+  --list-gold: url("../public/images/bullets/DS_Golden.webp");
+  --list-divine: url("../public/images/bullets/DS_Divine.webp");
+  --list-default: url("../public/images/bullets/default.webp");
   background: var(--primary);
   padding: 0;
   margin: 0;
