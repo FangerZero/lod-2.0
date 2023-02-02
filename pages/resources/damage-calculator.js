@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 export default function DamageCalculator(props) {
     const {enemies, players} = props;
-    const elements = ["None", "Fire", "Darkness", "Wind", "Light", "Earth", "Thunder", "Water"];
+    const elements = ["None", "Fire", "Dark", "Wind", "Light", "Earth", "Thunder", "Water"];
     const [data, setData] = useState({ "weaponElement": "none", "dragoonField": "", "dragoonModifier": 0, "playerPowerUp": false, "enemyPowerDown": false, "playerFear": false, "enemyFear": false, "magicAttack": false});
     const [dataErr, setDataErr] = useState({"playerLevel": false, "attackStat": false });
 
@@ -42,6 +42,7 @@ export default function DamageCalculator(props) {
         const enemyObject = enemies.find(mob => mob.name === data.enemy);
         return damageCalcuations({...data, "enemy": enemyObject});
       }
+      return '0';
     }
 
     const updateAdditionDropDown = (playerName) => {
@@ -104,7 +105,7 @@ export default function DamageCalculator(props) {
     }
 
     return (
-      <div className="md:justify-center md: mx-20">
+      <div className="md:justify-center md:mx-20 lg:mx-60">
         <Header title="Damage Calculator" description="Timeline information" />
         <div className="flex flex-row flex-wrap">
           <div className="damage-calc-items">
@@ -183,13 +184,13 @@ export default function DamageCalculator(props) {
             </select>
           </div>
         </div>
+        <div className="text-lg font-bold text-secondary border-4 border-accent w-fit p-3 m-2" data-cy="addition-dmg">Damage: {calculateDmg()}</div>
         <div>
           <ul>
             <li>Thick Borders Represents Invalid Data</li>
             <li>Damage is currently calculated as though every hit was complete for the addition. </li>
           </ul>
         </div>
-        <div className="text-lg font-semibold" data-cy="addition-dmg">Damage: {calculateDmg()}</div>
       </div>
     )
   }

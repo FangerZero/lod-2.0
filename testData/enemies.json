@@ -38,7 +38,7 @@
     {
         "name": "Cactus",
         "type": "minor",
-        "element": "Earth", 
+        "element": "earth", 
         "exp": 126, 
         "gold": 36, 
         "health": 320,

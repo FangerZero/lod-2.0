@@ -1,12 +1,14 @@
 export const damageCalcuations = (damageCalcStats) => {   
-    const opposingElements = [
-        {"fire": "water"},
-        {"water": "fire"},
-        {"light": "dark"},
-        {"dark": "light"},
-        {"earth": "wind"},
-        {"wind": "earth"}
-    ];
+    const opposingElements = {
+        "fire": "water",
+        "water": "fire",
+        "light": "dark",
+        "dark": "light",
+        "earth": "wind",
+        "wind": "earth",
+        "none": "",
+        "thunder": "",
+    };
     const {playerLevel, attackStat, maxHitPercent, dragoonModifier, weaponElement, playerPowerUp, enemyPowerDown, dragoonField, enemy, playerElement, playerFear, enemyFear, magicAttack, magicElement} = damageCalcStats
     const enemyDefense = magicAttack ? enemy['magical-defense'] : enemy.defense;
     // const enemyMagicalDefense = enemy['magical-defense'];
@@ -14,19 +16,18 @@ export const damageCalcuations = (damageCalcStats) => {
     const enemyPowerDownBonus = enemyPowerDown ? 50 : 0;
     const elementalAttack = weaponElement ? weaponElement : magicAttack ? magicElement : "none";
     let weaponElementBonus = 0;
-    if (opposingElements[enemy.element] === elementalAttack) {
+    if (opposingElements[enemy.element.toLowerCase()].toLowerCase() === elementalAttack.toLowerCase()) {
         weaponElementBonus = 100;
-    } else if (enemy.element === "none" || enemy.element === "thunder") {
-        weaponElementBonus = 0;
     } else if (enemy.element === elementalAttack) {
-        weaponElementBonus = -25;
+        weaponElementBonus = -50;
     }
 
     let dragoonFieldBonus = 0;
-    /*
-    if (opposingElements[dragoonField] === player.dragoon.element) {
-        dragoonFieldBonus = 50;
-    }*/
+    if (magicAttack && opposingElements[dragoonField].toLowerCase() === magicElement.toLowerCase()) {
+        dragoonFieldBonus = -50;
+    } else if (magicAttack && dragoonField.toLowerCase() === magicElement.toLowerCase()) {
+        dragoonFieldBonus = 50
+    }
     
     /*  Dumbed down Formula
         FIRST = floor((hit[1] + hit[2] + hit[n]) * multi / 100); 
