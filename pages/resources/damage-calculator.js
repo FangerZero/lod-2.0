@@ -116,10 +116,10 @@ export default function DamageCalculator(props) {
             </select>
           </div>
           <div className="damage-calc-items">
-            Player Level: <input className={dataErr.playerLevel ? 'text-box-invalid' : 'text-box'} type="number" min="1" max="99" required id="playerLevel" name="playerLevel" onChange={(e) => fillData("playerLevel", e.target.value)} placeholder="Player Level" data-cy="playerLevel"/>
+            Player Level: <input className={dataErr.playerLevel ? 'text-box-invalid w-20' : 'text-box w-20'} type="number" min="1" max="99" required id="playerLevel" name="playerLevel" onChange={(e) => fillData("playerLevel", e.target.value)} placeholder="Player Level" data-cy="playerLevel"/>
           </div>
           <div className="damage-calc-items">
-            Player (M)Attack Stat: <input className={dataErr.attackStat ? 'text-box-invalid' : 'text-box'} type="text" id="attackStat" name="attackStat" onChange={(e) => fillData("attackStat", e.target.value)} data-cy="attackStat" placeholder="Attack Stat"/>
+            Player (M)Attack Stat: <input className={dataErr.attackStat ? 'text-box-invalid w-20' : 'text-box w-20'} type="text" id="attackStat" name="attackStat" onChange={(e) => fillData("attackStat", e.target.value)} data-cy="attackStat" placeholder="Attack Stat"/>
           </div>
           <div className="damage-calc-items">
             Addition: 
@@ -184,7 +184,7 @@ export default function DamageCalculator(props) {
             </select>
           </div>
         </div>
-        <div className="text-lg font-bold text-secondary border-4 border-accent w-fit p-3 m-2" data-cy="addition-dmg">Damage: {calculateDmg()}</div>
+        <div className="text-lg font-bold text-secondary border-4 border-accent w-fit py-3 px-10 m-2" data-cy="addition-dmg">Damage: {calculateDmg()}</div>
         <div>
           <ul>
             <li>Thick Borders Represents Invalid Data</li>
