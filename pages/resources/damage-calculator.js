@@ -9,7 +9,7 @@ import { useState } from 'react'
 export default function DamageCalculator(props) {
     const {enemies, players} = props;
     const elements = ["None", "Fire", "Dark", "Wind", "Light", "Earth", "Thunder", "Water"];
-    const [data, setData] = useState({ "weaponElement": "none", "dragoonField": "", "dragoonModifier": 0, "playerPowerUp": false, "enemyPowerDown": false, "playerFear": false, "enemyFear": false, "magicAttack": false});
+    const [data, setData] = useState({ "weaponElement": "none", "dragoonField": "none", "dragoonModifier": 0, "playerPowerUp": false, "enemyPowerDown": false, "playerFear": false, "enemyFear": false, "magicAttack": false});
     const [dataErr, setDataErr] = useState({"playerLevel": false, "attackStat": false });
 
     const [additionDropDown, setAdditionDropDown] = useState([]);
@@ -116,10 +116,10 @@ export default function DamageCalculator(props) {
             </select>
           </div>
           <div className="damage-calc-items">
-            Player Level: <input className={dataErr.playerLevel ? 'text-box-invalid w-20' : 'text-box w-20'} type="number" min="1" max="99" required id="playerLevel" name="playerLevel" onChange={(e) => fillData("playerLevel", e.target.value)} placeholder="Player Level" data-cy="playerLevel"/>
+            Player Level: <input className={dataErr.playerLevel ? 'text-box-invalid w-20' : 'text-box w-20'} type="number" min="1" max="99" required id="playerLevel" name="playerLevel" onChange={(e) => fillData("playerLevel", e.target.value)} placeholder="Level" data-cy="playerLevel"/>
           </div>
           <div className="damage-calc-items">
-            Player (M)Attack Stat: <input className={dataErr.attackStat ? 'text-box-invalid w-20' : 'text-box w-20'} type="text" id="attackStat" name="attackStat" onChange={(e) => fillData("attackStat", e.target.value)} data-cy="attackStat" placeholder="Attack Stat"/>
+            Player (M)Attack Stat: <input className={dataErr.attackStat ? 'text-box-invalid w-20' : 'text-box w-20'} type="text" id="attackStat" name="attackStat" onChange={(e) => fillData("attackStat", e.target.value)} placeholder="(M)Atk" data-cy="attackStat"/>
           </div>
           <div className="damage-calc-items">
             Addition: 
@@ -134,7 +134,7 @@ export default function DamageCalculator(props) {
                 Addition Level: 
                 <select className="text-box" id="additionLevel" name="additionLevel" onChange={(e) => fillData("maxHitPercent", e.target.value)} value={currentAdditionLevel} data-cy="maxHitPercent">
                   <option value="" hidden>Select A Level</option>
-                  {additionLevelDropDown && additionLevelDropDown.map(additionLevel => <option key={additionLevel.level} value={additionLevel.damage}>{additionLevel.level}</option>)}
+                  {additionLevelDropDown.map(additionLevel => <option key={additionLevel.level} value={additionLevel.damage}>{additionLevel.level}</option>)}
                 </select>
               </>
             }
@@ -152,27 +152,27 @@ export default function DamageCalculator(props) {
           </div>
           <div className="damage-calc-items">
             Weapon Element: 
-            <select className="text-box" id="weaponElement" name="weaponElement" onChange={(e) => fillData("weaponElement", e.target.value)} defaultValue={'select'} data-cy="player">
-                <option value="select" disabled hidden>Select Weapon Element</option>
+            <select className="text-box" id="weaponElement" name="weaponElement" onChange={(e) => fillData("weaponElement", e.target.value)} defaultValue={'select'} data-cy="weapon">
+                <option value="select" disabled hidden>Element</option>
                 {elements && elements.map(element => <option key={element} value={element.toLocaleLowerCase()}>{element}</option>)}
             </select>
           </div>
           <div className="damage-calc-items">
-            Player PowerUp: <input className="check-box" type="checkbox" onChange={() => fillData("playerPowerUp", !data.playerPowerUp)}/> 
+            Player PowerUp: <input className="check-box" type="checkbox" onChange={() => fillData("playerPowerUp", !data.playerPowerUp)} data-cy="playerPowerUp"/> 
           </div>
           <div className="damage-calc-items">
-            Player Fearful: <input className="check-box" type="checkbox" onChange={() => fillData("playerFear", !data.playerFear)}/> 
+            Player Fearful: <input className="check-box" type="checkbox" onChange={() => fillData("playerFear", !data.playerFear)} data-cy="playerFear"/> 
           </div>
           <div className="damage-calc-items">
-            Enemy PowerDown: <input className="check-box" type="checkbox" onChange={() => fillData("enemyPowerDown", !data.enemyPowerDown)}/> 
+            Enemy PowerDown: <input className="check-box" type="checkbox" onChange={() => fillData("enemyPowerDown", !data.enemyPowerDown)} data-cy="enemyPowerDown"/> 
           </div>
           <div className="damage-calc-items">
-            Enemy Fearful: <input className="check-box" type="checkbox" onChange={() => fillData("enemyFear", !data.enemyFear)}/> 
+            Enemy Fearful: <input className="check-box" type="checkbox" onChange={() => fillData("enemyFear", !data.enemyFear)} data-cy="enemyFear"/> 
           </div>
           <div className="damage-calc-items">
             Dragoon Special Field: 
-            <select className="text-box" id="dragoonField" name="dragoonField" onChange={(e) => fillData("dragoonField", e.target.value)} defaultValue={'select'} data-cy="player">
-                <option value="select" disabled hidden>Select A Field</option>
+            <select className="text-box" id="dragoonField" name="dragoonField" onChange={(e) => fillData("dragoonField", e.target.value)} defaultValue={'select'} data-cy="field">
+                <option value="select" disabled hidden>Field</option>
                 {elements && elements.map(element => <option key={element} value={element.toLocaleLowerCase()}>{element}</option>)}
             </select>
           </div>
@@ -184,7 +184,7 @@ export default function DamageCalculator(props) {
             </select>
           </div>
         </div>
-        <div className="text-lg font-bold text-secondary border-4 border-accent w-fit py-3 px-10 m-2" data-cy="addition-dmg">Damage: {calculateDmg()}</div>
+        <div className="text-lg font-bold text-secondary border-4 border-accent w-fit py-3 px-10 m-2" data-cy="damage">Damage: {calculateDmg()}</div>
         <div>
           <ul>
             <li>Thick Borders Represents Invalid Data</li>

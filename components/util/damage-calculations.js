@@ -23,7 +23,7 @@ export const damageCalcuations = (damageCalcStats) => {
     }
 
     let dragoonFieldBonus = 0;
-    if (magicAttack && opposingElements[dragoonField].toLowerCase() === magicElement.toLowerCase()) {
+    if (magicAttack && opposingElements[dragoonField.toLowerCase()].toLowerCase() === magicElement.toLowerCase()) {
         dragoonFieldBonus = -50;
     } else if (magicAttack && dragoonField.toLowerCase() === magicElement.toLowerCase()) {
         dragoonFieldBonus = 50
