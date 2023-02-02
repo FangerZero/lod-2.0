@@ -2,21 +2,23 @@ import fs from 'fs/promises';
 import path from 'path';
 import Header from '../../components/layout/header'
 import {damageCalcuations} from '../../components/util/damage-calculations'
+import { mapToArray } from '../../components/util/utilities'
 import { useState } from 'react'
 
 
 export default function DamageCalculator(props) {
-    const [data, setData] = useState({ "weaponElement": "none", "dragoonField": "", "dragoonModifier": 0, "playerPowerUp": false, "enemyPowerDown": false, "playerFear": false, "enemyFear": false});
+    const {enemies, players} = props;
+    const elements = ["None", "Fire", "Darkness", "Wind", "Light", "Earth", "Thunder", "Water"];
+    const [data, setData] = useState({ "weaponElement": "none", "dragoonField": "", "dragoonModifier": 0, "playerPowerUp": false, "enemyPowerDown": false, "playerFear": false, "enemyFear": false, "magicAttack": false});
+    const [dataErr, setDataErr] = useState({"playerLevel": false, "attackStat": false });
+
     const [additionDropDown, setAdditionDropDown] = useState([]);
-    // const {currentPlayer, setCurrentPlayer} = useState({});
     const [additionLevelDropDown, setAdditionLevelDropDown] = useState(null);
     const [dragoonAdditionLevels, setDragoonAdditionLevels] = useState(null);
+
     const [currentAddition, setCurrentAddition] = useState('');
     const [currentAdditionLevel, setCurrentAdditionLevel] = useState('');
     const [currentDragoonModifier, setCurrentDragoonModifier] = useState('');
-    const {enemies, players} = props;
-    const [dataErr, setDataErr] = useState({"playerLevel": false, "attackStat": false })
-    const elements = ["None", "Fire", "Darkness", "Wind", "Light", "Earth", "Thunder", "Water"];
   
     const fillData = (key, value) => {
         if (key === "playerLevel" && (value < 1 || value > 99)) {
@@ -32,14 +34,13 @@ export default function DamageCalculator(props) {
         } else if (key === "dragoonModifier") {
           setCurrentDragoonModifier(value);
         }
-        console.log(key, ': ', value);
         setData({...data, [key]: value});
     };
 
     const calculateDmg = () => {
-      console.log('currentAdditionLevel', currentAdditionLevel);
       if (data.playerLevel && data.attackStat && data.enemy && data.maxHitPercent) {
         const enemyObject = enemies.find(mob => mob.name === data.enemy);
+        console.log('data', data);
         return damageCalcuations({...data, "enemy": enemyObject});
       }
     }
@@ -49,12 +50,24 @@ export default function DamageCalculator(props) {
       const newAdditions = playerDetails.additions.map(addition => {
         return {"name": addition.name, "hits": addition.hits, "levels": addition.levels};
       });
-      const dragoonAdditions = playerDetails.dragoon.map(dragoon => {
-        return {"name": dragoon.name, "hits": 4, "levels": dragoon.levels};
+      let dragoonAdditions = [];
+      let dragoonSpells = [];
+      playerDetails.dragoon.forEach(dragoon => {
+        
+        const dragoonLevels = new Map();
+        dragoon.levels.forEach(level => dragoonLevels.set(level.level, level))
+
+        dragoonAdditions.push({"name": dragoon.name, "hits": 4, "levels": mapToArray(dragoonLevels)});
+        dragoon.levels.forEach(level => {
+          if (level.spell !== "") {
+            dragoonSpells.push({"name": level.spell, "hits": 0, "element": dragoon.element, "levels": mapToArray(dragoonLevels)});
+          }
+        })
+        
       });
-      setAdditionDropDown([...newAdditions, ...dragoonAdditions]);
+      setAdditionDropDown([...newAdditions, ...dragoonAdditions, ...dragoonSpells]);
       setData({...data, ['playerElement']: playerDetails.element});
-      // setCurrentPlayer({...playerDetails});
+      
       fillData("dragoonModifier", 0);
       fillData("maxHitPercent", 0);
       setCurrentAddition("");
@@ -67,19 +80,27 @@ export default function DamageCalculator(props) {
       setCurrentAdditionLevel("");
       setCurrentDragoonModifier("");
       const additionDetails = additionDropDown.find(addition => addition.name === additionName);
-      if(additionName.search(/dragoon/i) === -1) {
+      if (additionDetails.hits === 0) {
+        console.log('Dragoon Magic')
+        // Dragoon Magic
+        setDragoonAdditionLevels(additionDetails.levels);
+        setAdditionLevelDropDown(null);
+        setData({...data, "magicElement": additionDetails.element, "magicAttack": true, "maxHitPercent": 200});
+      } else if(additionName.search(/dragoon/i) === -1) {
+        console.log('Additions')
+        // Additions
         const additionLevels = additionDetails.levels.map(level => {
-          return { "level": level.level, "damage": level.damage}
+          return {"level": level.level, "damage": level.damage}
         })
         setDragoonAdditionLevels(null);
         setAdditionLevelDropDown(additionLevels);
-        fillData("maxHitPercent", 0);
-        fillData("dragoonModifier", 0);
+        setData({...data, "magicAttack": false, "dragoonModifier": 0, "maxHitPercent": 0});
       } else {
+        console.log('Dragoon Additions')
         // Dragoon Addition
         setDragoonAdditionLevels(additionDetails.levels);
         setAdditionLevelDropDown(null);
-        fillData("maxHitPercent", 200); // Default for all dragoons 
+        setData({...data, "magicAttack": false, "maxHitPercent": 200}); // 200 Is Dragoon Addition Default
       }
     }
 
@@ -98,7 +119,7 @@ export default function DamageCalculator(props) {
             Player Level: <input className={dataErr.playerLevel ? 'text-box-invalid' : 'text-box'} type="number" min="1" max="99" required id="playerLevel" name="playerLevel" onChange={(e) => fillData("playerLevel", e.target.value)} placeholder="Player Level" data-cy="playerLevel"/>
           </div>
           <div className="damage-calc-items">
-            Player Attack Stat: <input className={dataErr.attackStat ? 'text-box-invalid' : 'text-box'} type="text" id="attackStat" name="attackStat" onChange={(e) => fillData("attackStat", e.target.value)} data-cy="attackStat" placeholder="Attack Stat"/>
+            Player (M)Attack Stat: <input className={dataErr.attackStat ? 'text-box-invalid' : 'text-box'} type="text" id="attackStat" name="attackStat" onChange={(e) => fillData("attackStat", e.target.value)} data-cy="attackStat" placeholder="Attack Stat"/>
           </div>
           <div className="damage-calc-items">
             Addition: 
@@ -124,7 +145,7 @@ export default function DamageCalculator(props) {
                 Dragoon Level: 
                 <select className="text-box" id="dragoonModifier" name="dragoonModifier" onChange={(e) => fillData("dragoonModifier", e.target.value)} value={currentDragoonModifier} data-cy="dragoonModifier">
                   <option value="" hidden>Select A Level</option>
-                  {dragoonAdditionLevels.map(dragoonAdditionLevel => <option key={`${dragoonAdditionLevel.level}-${dragoonAdditionLevel.spell}`} value={dragoonAdditionLevel.attack}>{dragoonAdditionLevel.level}</option>)}
+                  {dragoonAdditionLevels.map(dragoonAdditionLevel => <option key={`${dragoonAdditionLevel.level}-${dragoonAdditionLevel.spell}`} value={data.magicAttack ? dragoonAdditionLevel["magic-attack"] : dragoonAdditionLevel.attack}>{dragoonAdditionLevel.level}</option>)}
                 </select>
               </>
             }

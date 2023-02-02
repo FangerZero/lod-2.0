@@ -193,7 +193,7 @@
                         "gif": "",
                         "attack": 215,
                         "defense": 230,
-                        "magic-attack": 155,
+                        "magic-attack": 165,
                         "magic-defense": 230
                     },
                     {
@@ -203,7 +203,7 @@
                         "gif": "",
                         "attack": 220,
                         "defense": 250,
-                        "magic-attack": 160,
+                        "magic-attack": 170,
                         "magic-defense": 250
                     }
                 ]
@@ -526,6 +526,8 @@
                         "level": 1,
                         "sp-req": 0,
                         "spell": "Flameshot",
+                        "damage": 150,
+                        "originalDamage": 50,
                         "gif": "",
                         "attack": 150,
                         "defense": 200,
@@ -536,6 +538,8 @@
                         "level": 2,
                         "sp-req": 0,
                         "spell": "Explosion",
+                        "damage": 125,
+                        "originalDamage": 25,
                         "gif": "",
                         "attack": 155,
                         "defense": 210,
@@ -546,6 +550,8 @@
                         "level": 3,
                         "sp-req": 0,
                         "spell": "Final Burst",
+                        "damage": 175,
+                        "originalDamage": 75,
                         "gif": "",
                         "attack": 160,
                         "defense": 220,
@@ -567,6 +573,7 @@
                         "sp-req": 20000,
                         "mp": 100,
                         "spell": "Red-Eye Dragon",
+                        "damage": 200,
                         "gif": "",
                         "attack": 170,
                         "defense": 250,
