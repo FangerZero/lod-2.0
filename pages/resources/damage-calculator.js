@@ -188,7 +188,8 @@ export default function DamageCalculator(props) {
         <div>
           <ul>
             <li>Thick Borders Represents Invalid Data</li>
-            <li>Damage is currently calculated as though every hit was complete for the addition. </li>
+            <li>Weapon Element only applies to Non-dragoon additions, this is how it is suppose to work.</li>
+            <li>Damage is currently calculated as though every addition gets completed 100%.</li>
           </ul>
         </div>
       </div>
