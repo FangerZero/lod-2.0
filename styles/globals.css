@@ -42,8 +42,8 @@
     --list-image: var(--list-jade);
   }
   [data-theme="silver"] {
-    --primary: #fdfff1; 
-    --secondary: #f6f5ee;
+    --primary: #fafae8; 
+    --secondary: #d6d5ce;
     --tertiary: #dfdfdf;
     --accent: #cc4a29;/*Teal: #00c9cd, Red: cc4a29*/
     
