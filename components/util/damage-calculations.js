@@ -22,7 +22,6 @@ export const damageCalcuations = (damageCalcStats) => {
         weaponElementBonus = -25;
     }
 
-    console.log("i'm F*ing cold", magicAttack)
     let dragoonFieldBonus = 0;
     /*
     if (opposingElements[dragoonField] === player.dragoon.element) {
@@ -46,10 +45,10 @@ export const damageCalcuations = (damageCalcStats) => {
         SIXTH = floor[FIFTH * (100 + drgn special bonus) / 100];
             drgn special bonus: 
     */
-  console.log('damageCalcStats', damageCalcStats);
+    // console.log('damageCalcStats', damageCalcStats);
 
     const dragoonModifierBonus = dragoonModifier > 0 ? Number(dragoonModifier) : 100;
-     console.log('dragoonModifierBonus', dragoonModifierBonus);
+    // console.log('dragoonModifierBonus', dragoonModifierBonus);
     /***********************************************************************
      * maxHitPercent: Completing the addition, each attack has it's % split up
      * double hit lv 1 Dmg = 150%, split between 100% and 50% 
@@ -57,29 +56,29 @@ export const damageCalcuations = (damageCalcStats) => {
      * for now we're just going to assume that the addition is complete
      ***********************************************************************/
     const FIRST = Math.floor(maxHitPercent * dragoonModifierBonus / 100);
-     console.log('FIRST', FIRST);
+    // console.log('FIRST', FIRST);
     /***********************************************************************
      * attackStat: Physical or Magical Attack of Character
      ***********************************************************************/
     const SECOND = Math.floor((FIRST * Number(attackStat)) / 100);
-     console.log('SECOND', SECOND);
+    // console.log('SECOND', SECOND);
     /***********************************************************************
      * characterLevel: Base Level of character
      * enemyDefense: Physical or Magical Defense of Enemy
      ***********************************************************************/
     const THIRD = Math.round((SECOND * (Number(playerLevel) + 5) * 5) / enemyDefense);
-     console.log('THIRD', THIRD);
+    // console.log('THIRD', THIRD);
     /***********************************************************************
      * weaponElement: If the weapon has an element that is Positive or Negative to the enemy attacking
      ***********************************************************************/
     const FOURTH = Math.floor((THIRD * (100 + Number(weaponElementBonus))) / 100);
-     console.log('FOURTH', FOURTH);
+    // console.log('FOURTH', FOURTH);
     /***********************************************************************
      * playerPowerUp: Some sort of Power Up Bonus towards player? Some monsters use it
      * enemyPowerDown: Some sort of Power Down Bonus towards monster?
      ***********************************************************************/
     const FIFTH = Math.floor((FOURTH * (100 + Number(playerPowerUpBonus) + Number(enemyPowerDownBonus))) / 100);
-     console.log('FIFTH', FIFTH);
+    // console.log('FIFTH', FIFTH);
     /***********************************************************************
      * dragoonFieldBonus: 
      *  If Dragoon same element as Dimension field +50 bonus
@@ -87,7 +86,7 @@ export const damageCalcuations = (damageCalcStats) => {
      *  If Dragoon Under lv 5 and Opposite Element -50 bonus
      ***********************************************************************/
     const SIXTH = Math.floor((FIFTH * (100 + Number(dragoonFieldBonus))) / 100);
-     console.log('SIXTH', SIXTH);
+    // console.log('SIXTH', SIXTH);
     const SEVENTH = playerFear ? Math.floor(SIXTH / 2) : SIXTH;
     const EIGHTH = enemyFear ? Math.floor(SEVENTH * 2) : SEVENTH;
     return EIGHTH;

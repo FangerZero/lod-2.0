@@ -40,7 +40,6 @@ export default function DamageCalculator(props) {
     const calculateDmg = () => {
       if (data.playerLevel && data.attackStat && data.enemy && data.maxHitPercent) {
         const enemyObject = enemies.find(mob => mob.name === data.enemy);
-        console.log('data', data);
         return damageCalcuations({...data, "enemy": enemyObject});
       }
     }
@@ -81,13 +80,13 @@ export default function DamageCalculator(props) {
       setCurrentDragoonModifier("");
       const additionDetails = additionDropDown.find(addition => addition.name === additionName);
       if (additionDetails.hits === 0) {
-        console.log('Dragoon Magic')
+        // console.log('Dragoon Magic')
         // Dragoon Magic
         setDragoonAdditionLevels(additionDetails.levels);
         setAdditionLevelDropDown(null);
         setData({...data, "magicElement": additionDetails.element, "magicAttack": true, "maxHitPercent": 200});
       } else if(additionName.search(/dragoon/i) === -1) {
-        console.log('Additions')
+        // console.log('Additions')
         // Additions
         const additionLevels = additionDetails.levels.map(level => {
           return {"level": level.level, "damage": level.damage}
@@ -96,7 +95,7 @@ export default function DamageCalculator(props) {
         setAdditionLevelDropDown(additionLevels);
         setData({...data, "magicAttack": false, "dragoonModifier": 0, "maxHitPercent": 0});
       } else {
-        console.log('Dragoon Additions')
+        // console.log('Dragoon Additions')
         // Dragoon Addition
         setDragoonAdditionLevels(additionDetails.levels);
         setAdditionLevelDropDown(null);
