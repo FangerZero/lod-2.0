@@ -114,37 +114,37 @@
         "element": "Water",
         "additions": [
             {
-                "name": "Whip Smack",
-                "info": "This addition is available at character level 7.",
+                "name": "Double Smack",
+                "info": "This addition is available at the start of the game.",
                 "gif": "",
-                "hits": 4,
+                "hits": 1,
                 "levels": [
                     {
                         "level": 1,
                         "completions": 0,
                         "damage": 100,
                         "hits": [100, 50],
-                        "sp": 35
+                        "sp": 20
                     },{
                         "level": 2,
                         "completions": 20,
-                        "damage": 125,
-                        "sp": 35
+                        "damage": 110,
+                        "sp": 24
                     },{
                         "level": 3,
                         "completions": 40,
-                        "damage": 150,
-                        "sp": 35
+                        "damage": 120,
+                        "sp": 28
                     },{
                         "level": 4,
                         "completions": 60,
-                        "damage": 175,
-                        "sp": 35
+                        "damage": 130,
+                        "sp": 32
                     },{
                         "level": 5,
                         "completions": 80,
-                        "damage": 200,
-                        "sp": 35
+                        "damage": 150,
+                        "sp": 34
                     }
                 ]}
         ],
