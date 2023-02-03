@@ -889,10 +889,6 @@ video {
   width: fit-content;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1127,19 +1123,14 @@ ul {
     margin-right: 10rem;
   }
 
-  .md\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .md\:mx-80 {
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-
   .md\:mx-60 {
     margin-left: 15rem;
     margin-right: 15rem;
+  }
+
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .md\:mt-16 {
@@ -1181,10 +1172,6 @@ ul {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:flex-row {

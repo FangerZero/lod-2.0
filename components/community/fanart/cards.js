@@ -1,32 +1,32 @@
-import NewsCard from './card'
+import FanartCard from './card'
 import Link from 'next/link'
 
-export default function NewsCards(props) {
+export default function FanartCards(props) {
   return (
     <>
         <Link href="" className={props.style}>
-            <NewsCard />
+          <FanartCard />
         </Link>
         <Link href="" className={props.style}>
-        <NewsCard />
+        <FanartCard />
         </Link>
         <Link href="" className={props.style}>
-        <NewsCard />
+        <FanartCard />
         </Link>
         <Link href="" className={props.style}>
-        <NewsCard />
+        <FanartCard />
         </Link>
         <Link href="" className={props.style}>
-        <NewsCard />
+        <FanartCard />
         </Link>
         <Link href="" className={props.style}>
-        <NewsCard />
+        <FanartCard />
         </Link>
         <Link href="" className={props.style}>
-        <NewsCard />
+        <FanartCard />
         </Link>
         <Link href="" className={props.style}>
-        <NewsCard />
+        <FanartCard />
         </Link>
     </>
   )
