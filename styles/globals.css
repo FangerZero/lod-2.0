@@ -116,7 +116,7 @@
     @apply rounded border border-accent m-3;
   }
   .text-box-invalid {
-    @apply rounded border-8 border-secondary m-3;
+    @apply rounded border-4 border-accent m-3;
   }
   .check-box {
     @apply accent-accent;

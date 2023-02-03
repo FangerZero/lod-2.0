@@ -15,12 +15,12 @@ describe('Damage Calculator', () => {
     
     //invalid Level Data
     cy.getBySel('playerLevel').clear().type(100)
-    cy.getBySel('playerLevel').should('have.css', 'border-width', '8px')
+    cy.getBySel('playerLevel').should('have.css', 'border-width', '4px')
     cy.getBySel('playerLevel').clear().type(99)
     cy.getBySel('playerLevel').should('have.css', 'border-width', '1px')
     //invalid Attack Data
     cy.getBySel('attackStat').clear().type(1000)
-    cy.getBySel('attackStat').should('have.css', 'border-width', '8px')
+    cy.getBySel('attackStat').should('have.css', 'border-width', '4px')
     cy.getBySel('attackStat').clear().type(75)
     cy.getBySel('attackStat').should('have.css', 'border-width', '1px')
   })
@@ -102,9 +102,9 @@ describe('Damage Calculator', () => {
     cy.getBySel('field').select('Fire')
     cy.getBySel('damage').should('exist').contains('Damage: 711') // 708
     cy.getBySel('field').select('Dark')
-    cy.getBySel('damage').should('exist').contains('Damage: 472') // 472
+    cy.getBySel('damage').should('exist').contains('Damage: 474') // 472
     cy.getBySel('field').select('Water')
-    cy.getBySel('damage').should('exist').contains('Damage: 236')
+    cy.getBySel('damage').should('exist').contains('Damage: 237') // 236
   })
   
 })

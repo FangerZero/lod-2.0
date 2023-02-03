@@ -754,8 +754,8 @@ video {
 .text-box-invalid {
   margin: 0.75rem;
   border-radius: 0.25rem;
-  border-width: 8px;
-  border-color: var(--secondary);
+  border-width: 4px;
+  border-color: var(--accent);
 }
 
 .check-box {
@@ -829,6 +829,16 @@ video {
   margin: 0.25rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -877,6 +887,10 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .flex-1 {
@@ -951,6 +965,10 @@ video {
 
 .bg-primary {
   background-color: var(--primary);
+}
+
+.bg-accent {
+  background-color: var(--accent);
 }
 
 .p-1 {
@@ -1114,6 +1132,16 @@ ul {
     margin-right: 5rem;
   }
 
+  .md\:mx-80 {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .md\:mx-60 {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
   .md\:mt-16 {
     margin-top: 4rem;
   }
@@ -1153,6 +1181,10 @@ ul {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:flex-row {
