@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Account from './account';
 
 export default function Navigation() {
   return (
@@ -39,6 +40,8 @@ export default function Navigation() {
           <Link className="nav-style" href="/resources/archives" data-cy="nav-archives">Archives</Link>
         </div>
       </div>
+      
+      <Account />
     </nav>
   )
 }
