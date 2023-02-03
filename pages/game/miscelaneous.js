@@ -1,7 +1,7 @@
 import Header from '../../components/layout/header'
-import Merch from '../../components/game/merch'
-import Misc from '../../components/game/misc'
-import Promos from '../../components/game/promos'
+import Merch from '../../components/game/miscelaneous/merch'
+import Misc from '../../components/game/miscelaneous/misc'
+import Promos from '../../components/game/miscelaneous/promos'
 import { useState } from 'react'
 
 export default function Miscelaneous() {
