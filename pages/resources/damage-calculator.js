@@ -122,9 +122,9 @@ export default function DamageCalculator(props) {
             Player (M)Attack Stat: <input className={dataErr.attackStat ? 'text-box-invalid w-20' : 'text-box w-20'} type="text" id="attackStat" name="attackStat" onChange={(e) => fillData("attackStat", e.target.value)} placeholder="(M)Atk" data-cy="attackStat"/>
           </div>
           <div className="damage-calc-items">
-            Addition: 
+            Attack: 
             <select className="text-box" id="addition" name="addition" placeholder="Select An Addition" onChange={(e) => updateAdditionLevelDropDown(e.target.value)} value={currentAddition} data-cy="addition">
-                <option value="" hidden>Select An Addition</option>
+                <option value="" hidden>Select An Attack</option>
                 {additionDropDown && additionDropDown.map(addition => <option key={addition.name} value={addition.name}>{addition.name}</option>)}
             </select>
           </div>
@@ -151,7 +151,7 @@ export default function DamageCalculator(props) {
             }
           </div>
           <div className="damage-calc-items">
-            Weapon Element: 
+            Attack Element: 
             <select className="text-box" id="weaponElement" name="weaponElement" onChange={(e) => fillData("weaponElement", e.target.value)} defaultValue={'select'} data-cy="weapon">
                 <option value="select" disabled hidden>Element</option>
                 {elements && elements.map(element => <option key={element} value={element.toLocaleLowerCase()}>{element}</option>)}
