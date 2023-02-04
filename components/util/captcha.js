@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
-import { getRand } from '../util/utilities'
-
+import { getRand, importAllFiles } from '../util/utilities'
+import Image from 'next/image'
+    
 export default function Captcha(props) {
     const {setCaptcha} = props;
     const [subjectImage, setSubjectImage] = useState("");
@@ -9,9 +10,11 @@ export default function Captcha(props) {
     const [verified, setVerified] = useState(false);
     const [unverified, setUnverified] = useState(false);
     const characters = ['Rose', 'Dart', 'Shana', 'Lavitz', 'Kongol', 'Haschel', 'Albert', 'Meru', 'Miranda', 'Lloyd'];
+    const imageFiles = useState(importAllFiles(require.context('../../public/images/captcha', false, /\.(png|jpe?g|svg|webp)$/)));
 
     useEffect(() => {
         const id = getRand(characters.length);
+        const imageKeys = Object.keys(imageFiles[0]);
         let imgRay = [];
         let imgClicks = 0;
         let first = getRand(8);
@@ -20,31 +23,34 @@ export default function Captcha(props) {
             let newId = getRand(characters.length);
             if (imgRay.length === first || imgRay.length === second || newId === id) {
                 imgClicks++;
+                newId = id;
             }
             
-            if (imgRay.length === first || imgRay.length === second) {
-                imgRay.push(characters[id]);
-            } else {
-                imgRay.push(characters[newId]);
-            }
+            let tempImgs = imageKeys.filter(key => {
+                if (newId !== id) {
+                    return key.toLowerCase().indexOf(characters[newId].toLowerCase()) >= 0 && key.toLowerCase().indexOf(characters[id].toLowerCase()) < 0
+                }
+                return key.toLowerCase().indexOf(characters[newId].toLowerCase()) >= 0
+            });         
+            imgRay.push(`/images/captcha/${tempImgs[getRand(tempImgs.length)]}`);
         }
         setSubjectImage(characters[id]);
         setImages([...imgRay]);
         setClicks(imgClicks);
     }, [])
 
-    const checkImage = (imagesIndex) => {
-        if (images[imagesIndex] !== subjectImage) {
+    const checkImage = (file, index) => {
+        if (file.toLowerCase().indexOf(subjectImage.toLowerCase()) < 0) {
             setCaptcha(true)
             setUnverified(true);
-        } else if (clicks === 1 && images[imagesIndex] === subjectImage) {
+        } else if (clicks === 1 && file.toLowerCase().indexOf(subjectImage.toLowerCase()) >= 0) {
             setCaptcha(false);
             setVerified(true);
         } else {
             let imgCopy = [...images];
-            imgCopy.splice(imagesIndex,1); // Remove the image clicked
+            imgCopy.splice(index,1); // Remove the image clicked
             for (let i=0; i <= imgCopy.length; i++) {
-                if (i >= 10 && subjectImage === imgCopy[i]) {
+                if (i >= 10 && imgCopy[i] && imgCopy[i].toLowerCase().indexOf(subjectImage.toLowerCase()) >= 0) {
                     let newIndex = getRand(8);
                     imgCopy.splice(newIndex, 0, imgCopy[i]);
                     imgCopy.splice(i+1, 1);
@@ -52,9 +58,21 @@ export default function Captcha(props) {
             }
             setImages([...imgCopy]);
             setClicks(clicks-1);
+
         }
     }
-      
+
+    const displayImage = (index) => {
+        return (<Image
+            className="bg-accent m-1 cursor-pointer"
+            src={images[index]}
+            onClick={() => checkImage(images[index], index)} 
+            alt={`Captcha Image ${index}`}
+            width={200}
+            height={200}/>
+            )
+    }
+    
     return (
       <div className="md:justify-center" data-cy="captcha">
         {verified &&
@@ -63,23 +81,23 @@ export default function Captcha(props) {
         {unverified &&
             <div>Unverified - Please Refresh</div>
         }
-        {!verified && !unverified &&
+        {!verified && !unverified && images &&
             <div>
                 Find {subjectImage}
                 <div className="flex flex-row">
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(0)}>{images[0]}</div>
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(1)}>{images[1]}</div>
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(2)}>{images[2]}</div>
+                    {displayImage(0)}
+                    {displayImage(1)}
+                    {displayImage(2)}
                 </div>
                 <div className="flex flex-row">
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(3)}>{images[3]}</div>
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(4)}>{images[4]}</div>
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(5)}>{images[5]}</div>
+                    {displayImage(3)}
+                    {displayImage(4)}
+                    {displayImage(5)}
                 </div>
                 <div className="flex flex-row">
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(6)}>{images[6]}</div>
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(7)}>{images[7]}</div>
-                    <div className="bg-accent w-fit m-1 cursor-pointer" onClick={() => checkImage(8)}>{images[8]}</div>
+                    {displayImage(6)}
+                    {displayImage(7)}
+                    {displayImage(8)}
                 </div>
             </div>
         }
