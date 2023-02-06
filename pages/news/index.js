@@ -6,7 +6,7 @@ export default function News() {
     <>
       <Header title="News" description="description of home page" />
       <div className="md:justify-center flex flex-row flex-wrap">
-        <NewsCards style="md:w-1/3 m-2"/>
+        <NewsCards style="md:w-1/3 m-2 p-2 rounded bg-secondary"/>
       </div>
     </>
   );    

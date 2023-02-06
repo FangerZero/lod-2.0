@@ -9,7 +9,7 @@ export default function Home() {
 
         {/* News Cards */}
         <div className="md:w-2/3 md:mr-5">
-          <NewsCards/>
+          <NewsCards style="md:card md:w-full flex"/>
         </div>
         {/* Widget Cards */}
         <div className="hidden md:block w-1/3">
