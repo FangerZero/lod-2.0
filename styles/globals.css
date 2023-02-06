@@ -94,6 +94,9 @@
   .nav-style {
     @apply px-6 py-3 font-semibold tracking-wider hover:bg-accent hover:text-secondary bg-secondary text-accent;
   }
+  .mobile-nav-style {
+    @apply  px-6 py-3 font-semibold tracking-wider bg-secondary text-accent;
+  }
   .menu-dropdown-content {
     @apply hidden group-hover:flex group-hover:flex-col absolute text-accent bg-secondary drop-shadow-md border border-secondary rounded-b-md;
   }
@@ -150,6 +153,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    
 }
 
 a {
@@ -160,4 +164,50 @@ a {
 ul {
   list-style-position: inside;
   list-style-image: var(--list-image);
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0px;
+  left: 0px;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
