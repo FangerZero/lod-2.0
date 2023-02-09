@@ -1,1 +1,19 @@
 =CONCAT("{ ""name"": """,C2,""", ""element"": """,D2,""", ""experience"": ",E2,", ""gold"": ",F2,", ""hp"": ",G2,", ""attack"": ",H2,", ""defense"": ",I2,", ""magical-attack"": ",J2,", ""magical-defense"": ",K2,", ""speed"": ",L2,", ""a-av"": ",M2,", ""a-hit"": ",S2,", ""m-av"": ",N2,", ""m-hit"": ",T2,", ""counter-attack"": ",O2,", ""drops"": """,P2,""", ""elemental-immunity"": """,Q2,""", ""status-resist"": """,R2,"""},"
+
+
+// Dragoon Magic/Levels
+=CONCAT("{""level"": ", B2, ", ""sp-req"": ", C2, ", ""mp"": ", D2, ", ""spell"": """, I2, """, ""gif"": """, """, ""attack"": ", E2*100, ", ""defense"": ", F2*100, ", ""magic-attack"": ", G2*100, ", ""magic-defense"": ", H2*100, ", ""spell-cost"": ", J2, "},")
+
+
+//Additions
+=CONCAT("{ ""name"": """, B2 ,""", ""info"": """", ""gif"": """", ""hits"": ", (D2-1), ", ""levels"": [] }"),
+
+//Addition Levels
+=CONCAT("{ ""level"": ",A1,", ""completions"":", B1, ", ""damage"": ",(C1*100), ", ""hits"": [], ""sp"": ", D1, " },")
+{
+                    "level": 1,
+                    "completions": 0,
+                    "damage": 150,
+                    "hits": [100, 50],
+                    "sp": 30
+                }
