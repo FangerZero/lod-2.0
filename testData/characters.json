@@ -15,24 +15,31 @@
                         "level": 1,
                         "completions": 0,
                         "damage": 100,
-                        "hits": [100, 50],
+                        "hits": [
+                            100,
+                            50
+                        ],
                         "sp": 35
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 125,
                         "sp": 35
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 150,
                         "sp": 35
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 175,
                         "sp": 35
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 200,
@@ -40,24 +47,135 @@
                     }
                 ]
             },
-            { "name": "More & More", "info": "", "gif": "", "hits": 2, "levels": [{ "level": 1, "completions":0, "damage": 150, "hits": [], "sp": 30 },
-            { "level": 2, "completions":20, "damage": 150, "hits": [], "sp": 45 },
-            { "level": 3, "completions":40, "damage": 150, "hits": [], "sp": 60 },
-            { "level": 4, "completions":60, "damage": 150, "hits": [], "sp": 75 },
-            { "level": 5, "completions":80, "damage": 150, "hits": [], "sp": 102 }
-            ] },
-            { "name": "Hard Blade", "info": "", "gif": "", "hits": 5, "levels": [{ "level": 1, "completions":0, "damage": 100, "hits": [], "sp": 35 },
-            { "level": 2, "completions":20, "damage": 150, "hits": [], "sp": 35 },
-            { "level": 3, "completions":40, "damage": 200, "hits": [], "sp": 35 },
-            { "level": 4, "completions":60, "damage": 250, "hits": [], "sp": 35 },
-            { "level": 5, "completions":80, "damage": 300, "hits": [], "sp": 35 }
-            ] },
-            { "name": "Demon's Dance", "info": "", "gif": "", "hits": 7, "levels": [{ "level": 1, "completions":0, "damage": 200, "hits": [], "sp": 100 },
-            { "level": 2, "completions":20, "damage": 280, "hits": [], "sp": 100 },
-            { "level": 3, "completions":40, "damage": 360, "hits": [], "sp": 100 },
-            { "level": 4, "completions":60, "damage": 440, "hits": [], "sp": 100 },
-            { "level": 5, "completions":80, "damage": 500, "hits": [], "sp": 100 }
-            ] }
+            {
+                "name": "More & More",
+                "info": "",
+                "gif": "",
+                "hits": 2,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 30
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 45
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 60
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 75
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 102
+                    }
+                ]
+            },
+            {
+                "name": "Hard Blade",
+                "info": "",
+                "gif": "",
+                "hits": 5,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 200,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 250,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 300,
+                        "hits": [],
+                        "sp": 35
+                    }
+                ]
+            },
+            {
+                "name": "Demon's Dance",
+                "info": "",
+                "gif": "",
+                "hits": 7,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 200,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 280,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 360,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 440,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 500,
+                        "hits": [],
+                        "sp": 100
+                    }
+                ]
+            }
         ],
         "dragoon": [
             {
@@ -142,30 +260,38 @@
                         "level": 1,
                         "completions": 0,
                         "damage": 100,
-                        "hits": [100, 50],
+                        "hits": [
+                            100,
+                            50
+                        ],
                         "sp": 20
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 110,
                         "sp": 24
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 120,
                         "sp": 28
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 130,
                         "sp": 32
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 150,
                         "sp": 34
                     }
-                ]}
+                ]
+            }
         ],
         "dragoon": [
             {
@@ -243,11 +369,66 @@
                 "transformation": "",
                 "physical-attack": "",
                 "levels": [
-                    {"level": 1, "sp-req": 0, "mp": 20, "spell": "Grand Stream", "gif": "", "attack": 150,"defense": 200,"magic-attack": 200, "magic-defense": 200, "spell-cost": 10},
-                    {"level": 2, "sp-req": 1000, "mp": 40, "spell": "", "gif": "", "attack": 155,"defense": 210,"magic-attack": 210, "magic-defense": 210, "spell-cost": 0},
-                    {"level": 3, "sp-req": 2000, "mp": 60, "spell": "Meteor Strike", "gif": "", "attack": 160,"defense": 220,"magic-attack": 220, "magic-defense": 220, "spell-cost": 20},
-                    {"level": 4, "sp-req": 12000, "mp": 80, "spell": "", "gif": "", "attack": 165,"defense": 230,"magic-attack": 230, "magic-defense": 230, "spell-cost": 0},
-                    {"level": 5, "sp-req": 20000, "mp": 100, "spell": "Golden Dragon", "gif": "", "attack": 170,"defense": 250,"magic-attack": 220, "magic-defense": 250, "spell-cost": 80}
+                    {
+                        "level": 1,
+                        "sp-req": 0,
+                        "mp": 20,
+                        "spell": "Grand Stream",
+                        "gif": "",
+                        "attack": 150,
+                        "defense": 200,
+                        "magic-attack": 200,
+                        "magic-defense": 200,
+                        "spell-cost": 10
+                    },
+                    {
+                        "level": 2,
+                        "sp-req": 1000,
+                        "mp": 40,
+                        "spell": "",
+                        "gif": "",
+                        "attack": 155,
+                        "defense": 210,
+                        "magic-attack": 210,
+                        "magic-defense": 210,
+                        "spell-cost": 0
+                    },
+                    {
+                        "level": 3,
+                        "sp-req": 2000,
+                        "mp": 60,
+                        "spell": "Meteor Strike",
+                        "gif": "",
+                        "attack": 160,
+                        "defense": 220,
+                        "magic-attack": 220,
+                        "magic-defense": 220,
+                        "spell-cost": 20
+                    },
+                    {
+                        "level": 4,
+                        "sp-req": 12000,
+                        "mp": 80,
+                        "spell": "",
+                        "gif": "",
+                        "attack": 165,
+                        "defense": 230,
+                        "magic-attack": 230,
+                        "magic-defense": 230,
+                        "spell-cost": 0
+                    },
+                    {
+                        "level": 5,
+                        "sp-req": 20000,
+                        "mp": 100,
+                        "spell": "Golden Dragon",
+                        "gif": "",
+                        "attack": 170,
+                        "defense": 250,
+                        "magic-attack": 220,
+                        "magic-defense": 250,
+                        "spell-cost": 80
+                    }
                 ]
             }
         ]
@@ -266,11 +447,66 @@
                 "transformation": "",
                 "physical-attack": "",
                 "levels": [
-                    {"level": 1, "sp-req": 0, "mp": 20, "spell": "Moonlight", "gif": "", "attack": 200,"defense": 200,"magic-attack": 150, "magic-defense": 200, "spell-cost": 10},
-                    {"level": 2, "sp-req": 1000, "mp": 40, "spell": "Star Children", "gif": "", "attack": 205,"defense": 210,"magic-attack": 155, "magic-defense": 210, "spell-cost": 20},
-                    {"level": 3, "sp-req": 6000, "mp": 60, "spell": "Gates of Heaven", "gif": "", "attack": 210,"defense": 220,"magic-attack": 160, "magic-defense": 220, "spell-cost": 30},
-                    {"level": 4, "sp-req": 12000, "mp": 80, "spell": "", "gif": "", "attack": 215,"defense": 230,"magic-attack": 165, "magic-defense": 230, "spell-cost": 0},
-                    {"level": 5, "sp-req": 20000, "mp": 100, "spell": "White Silver Dragon", "gif": "", "attack": 220,"defense": 250,"magic-attack": 170, "magic-defense": 250, "spell-cost": 80}
+                    {
+                        "level": 1,
+                        "sp-req": 0,
+                        "mp": 20,
+                        "spell": "Moonlight",
+                        "gif": "",
+                        "attack": 200,
+                        "defense": 200,
+                        "magic-attack": 150,
+                        "magic-defense": 200,
+                        "spell-cost": 10
+                    },
+                    {
+                        "level": 2,
+                        "sp-req": 1000,
+                        "mp": 40,
+                        "spell": "Star Children",
+                        "gif": "",
+                        "attack": 205,
+                        "defense": 210,
+                        "magic-attack": 155,
+                        "magic-defense": 210,
+                        "spell-cost": 20
+                    },
+                    {
+                        "level": 3,
+                        "sp-req": 6000,
+                        "mp": 60,
+                        "spell": "Gates of Heaven",
+                        "gif": "",
+                        "attack": 210,
+                        "defense": 220,
+                        "magic-attack": 160,
+                        "magic-defense": 220,
+                        "spell-cost": 30
+                    },
+                    {
+                        "level": 4,
+                        "sp-req": 12000,
+                        "mp": 80,
+                        "spell": "",
+                        "gif": "",
+                        "attack": 215,
+                        "defense": 230,
+                        "magic-attack": 165,
+                        "magic-defense": 230,
+                        "spell-cost": 0
+                    },
+                    {
+                        "level": 5,
+                        "sp-req": 20000,
+                        "mp": 100,
+                        "spell": "White Silver Dragon",
+                        "gif": "",
+                        "attack": 220,
+                        "defense": 250,
+                        "magic-attack": 170,
+                        "magic-defense": 250,
+                        "spell-cost": 80
+                    }
                 ]
             }
         ]
@@ -289,11 +525,66 @@
                 "transformation": "",
                 "physical-attack": "",
                 "levels": [
-                    {"level": 1, "sp-req": 0, "mp": 20, "spell": "Atomic Mind", "gif": "", "attack": 150,"defense": 200,"magic-attack": 200, "magic-defense": 200, "spell-cost": 10},
-                    {"level": 2, "sp-req": 1000, "mp": 40, "spell": "Thunder Kid", "gif": "", "attack": 155,"defense": 210,"magic-attack": 205, "magic-defense": 210, "spell-cost": 20},
-                    {"level": 3, "sp-req": 6000, "mp": 60, "spell": "Thunder God", "gif": "", "attack": 160,"defense": 220,"magic-attack": 210, "magic-defense": 220, "spell-cost": 30},
-                    {"level": 4, "sp-req": 12000, "mp": 80, "spell": "", "gif": "", "attack": 165,"defense": 230,"magic-attack": 215, "magic-defense": 230, "spell-cost": 0},
-                    {"level": 5, "sp-req": 20000, "mp": 100, "spell": "Violet Dragon", "gif": "", "attack": 170,"defense": 250,"magic-attack": 220, "magic-defense": 250, "spell-cost": 80}
+                    {
+                        "level": 1,
+                        "sp-req": 0,
+                        "mp": 20,
+                        "spell": "Atomic Mind",
+                        "gif": "",
+                        "attack": 150,
+                        "defense": 200,
+                        "magic-attack": 200,
+                        "magic-defense": 200,
+                        "spell-cost": 10
+                    },
+                    {
+                        "level": 2,
+                        "sp-req": 1000,
+                        "mp": 40,
+                        "spell": "Thunder Kid",
+                        "gif": "",
+                        "attack": 155,
+                        "defense": 210,
+                        "magic-attack": 205,
+                        "magic-defense": 210,
+                        "spell-cost": 20
+                    },
+                    {
+                        "level": 3,
+                        "sp-req": 6000,
+                        "mp": 60,
+                        "spell": "Thunder God",
+                        "gif": "",
+                        "attack": 160,
+                        "defense": 220,
+                        "magic-attack": 210,
+                        "magic-defense": 220,
+                        "spell-cost": 30
+                    },
+                    {
+                        "level": 4,
+                        "sp-req": 12000,
+                        "mp": 80,
+                        "spell": "",
+                        "gif": "",
+                        "attack": 165,
+                        "defense": 230,
+                        "magic-attack": 215,
+                        "magic-defense": 230,
+                        "spell-cost": 0
+                    },
+                    {
+                        "level": 5,
+                        "sp-req": 20000,
+                        "mp": 100,
+                        "spell": "Violet Dragon",
+                        "gif": "",
+                        "attack": 170,
+                        "defense": 250,
+                        "magic-attack": 220,
+                        "magic-defense": 250,
+                        "spell-cost": 80
+                    }
                 ]
             }
         ]
@@ -305,130 +596,217 @@
         "element": "Wind",
         "additions": [
             {
-                "name": "Harpoon", 
-                "info": "This addition is available at the start of the game.", 
-                "gif": "", 
-                "hits": 1, 
-                "levels": [{
-                    "level": 1,
-                    "completions":0,
-                    "damage": 100,
-                    "hits": [],
-                    "sp": 35
-                }, {
-                    "level": 2,
-                    "completions":20,
-                    "damage": 110,
-                    "hits": [],
-                    "sp": 38
-                }, {
-                    "level": 3,
-                    "completions":40,
-                    "damage": 120,
-                    "hits": [],
-                    "sp": 42
-                }, {
-                    "level": 4,
-                    "completions":60,
-                    "damage": 130,
-                    "hits": [],
-                    "sp": 45
-                }, {
-                    "level": 5,
-                    "completions":80,
-                    "damage": 150,
-                    "hits": [],
-                    "sp": 50 
-                }] 
-            }, {
-                "name": "Spinning Cane", 
-                "info": "This addition is available at character level 5.", 
-                "gif": "", 
-                "hits": 2, 
-                "levels": [{ 
-                    "level": 1, 
-                    "completions":0, 
-                    "damage": 100, 
-                    "hits": [], 
-                    "sp": 35 
-                }, {
-                    "level": 2, 
-                    "completions":20, 
-                    "damage": 125, 
-                    "hits": [], 
-                    "sp": 35 
-                }, {
-                    "level": 3, 
-                    "completions":40, 
-                    "damage": 150, 
-                    "hits": [], 
-                    "sp": 35 
-                }, {
-                    "level": 4, 
-                    "completions":60, 
-                    "damage": 175, 
-                    "hits": [], 
-                    "sp": 35 
-                }, {
-                    "level": 5, 
-                    "completions":80, 
-                    "damage": 200, 
-                    "hits": [], 
-                    "sp": 35 
-                }]
-            }, {
-                "name": "Rod Typhoon", 
-                "info": "This addition is available at character level 7.", 
-                "gif": "", 
-                "hits": 4, 
-                "levels": [{
-                    "level": 1,
-                    "completions": 0,
-                    "damage": 150,
-                    "hits": [100, 50],
-                    "sp": 30
-                }, {
-                    "level": 2,
-                    "completions": 20,
-                    "damage": 162,
-                    "sp": 45
-                }, {
-                    "level": 3,
-                    "completions": 40,
-                    "damage": 174,
-                    "sp": 60
-                }, {
-                    "level": 4,
-                    "completions": 60,
-                    "damage": 186,
-                    "sp": 75
-                }, {
-                    "level": 5,
-                    "completions": 80,
-                    "damage": 202,
-                    "sp": 100
-                }] 
-            }, {
-                "name": "Gust of Wind Dance", 
-                "info": "This addition is available at character level 11.", 
-                "gif": "", 
-                "hits": 6, 
-                "levels": [{ "level": 1, "completions":0, "damage": 200, "hits": [], "sp": 35 },
-                { "level": 2, "completions":20, "damage": 240, "hits": [], "sp": 35 },
-                { "level": 3, "completions":40, "damage": 280, "hits": [], "sp": 35 },
-                { "level": 4, "completions":60, "damage": 320, "hits": [], "sp": 35 },
-                { "level": 5, "completions":80, "damage": 350, "hits": [], "sp": 35 },
-                ] 
-            }, { 
-                "name": "Flower Storm", 
-                "info": "This addition is available once all other additions are mastered (80 completions).", 
-                "gif": "", 
-                "hits": 7, 
-                "levels": [{ "level": 1, "completions":0, "damage": 300, "hits": [], "sp": 60 },
-                { "level": 2, "completions":20, "damage": 324, "hits": [], "sp": 90 },
-                { "level": 3, "completions":40, "damage": 348, "hits": [], "sp": 120 },
-                { "level": 4, "completions":60, "damage": 372, "hits": [], "sp": 150 },
-                { "level": 5, "completions":80, "damage": 405, "hits": [], "sp": 202 },
+                "name": "Harpoon",
+                "info": "This addition is available at the start of the game.",
+                "gif": "",
+                "hits": 1,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 110,
+                        "hits": [],
+                        "sp": 38
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 120,
+                        "hits": [],
+                        "sp": 42
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 130,
+                        "hits": [],
+                        "sp": 45
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 50
+                    }
+                ]
+            },
+            {
+                "name": "Spinning Cane",
+                "info": "This addition is available at character level 5.",
+                "gif": "",
+                "hits": 2,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 125,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 175,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 200,
+                        "hits": [],
+                        "sp": 35
+                    }
+                ]
+            },
+            {
+                "name": "Rod Typhoon",
+                "info": "This addition is available at character level 7.",
+                "gif": "",
+                "hits": 4,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 150,
+                        "hits": [
+                            100,
+                            50
+                        ],
+                        "sp": 30
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 162,
+                        "sp": 45
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 174,
+                        "sp": 60
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 186,
+                        "sp": 75
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 202,
+                        "sp": 100
+                    }
+                ]
+            },
+            {
+                "name": "Gust of Wind Dance",
+                "info": "This addition is available at character level 11.",
+                "gif": "",
+                "hits": 6,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 200,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 240,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 280,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 320,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 350,
+                        "hits": [],
+                        "sp": 35
+                    },
+                ]
+            },
+            {
+                "name": "Flower Storm",
+                "info": "This addition is available once all other additions are mastered (80 completions).",
+                "gif": "",
+                "hits": 7,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 300,
+                        "hits": [],
+                        "sp": 60
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 324,
+                        "hits": [],
+                        "sp": 90
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 348,
+                        "hits": [],
+                        "sp": 120
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 372,
+                        "hits": [],
+                        "sp": 150
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 405,
+                        "hits": [],
+                        "sp": 202
+                    },
                 ]
             }
         ],
@@ -441,49 +819,63 @@
                 "physical-attack": "",
                 "levels": [
                     {
-                        "level": 1, 
-                        "sp-req": 0, 
-                        "mp": 20, 
-                        "spell": "Wing Blaster", 
-                        "gif": "", 
-                        "attack": 150,"defense": 200,"magic-attack": 200, 
-                        "magic-defense": 200, 
+                        "level": 1,
+                        "sp-req": 0,
+                        "mp": 20,
+                        "spell": "Wing Blaster",
+                        "gif": "",
+                        "attack": 150,
+                        "defense": 200,
+                        "magic-attack": 200,
+                        "magic-defense": 200,
                         "spell-cost": 20
-                    }, {
-                        "level": 2, 
-                        "sp-req": 1000, 
-                        "mp": 40, 
-                        "spell": "Rose Storm", 
-                        "gif": "", 
-                        "attack": 155,"defense": 210,"magic-attack": 205, 
-                        "magic-defense": 210, 
+                    },
+                    {
+                        "level": 2,
+                        "sp-req": 1000,
+                        "mp": 40,
+                        "spell": "Rose Storm",
+                        "gif": "",
+                        "attack": 155,
+                        "defense": 210,
+                        "magic-attack": 205,
+                        "magic-defense": 210,
                         "spell-cost": 20
-                    }, {
-                        "level": 3, 
-                        "sp-req": 6000, 
-                        "mp": 60, 
-                        "spell": "Gaspless", 
-                        "gif": "", 
-                        "attack": 160,"defense": 220,"magic-attack": 210, 
-                        "magic-defense": 220, 
+                    },
+                    {
+                        "level": 3,
+                        "sp-req": 6000,
+                        "mp": 60,
+                        "spell": "Gaspless",
+                        "gif": "",
+                        "attack": 160,
+                        "defense": 220,
+                        "magic-attack": 210,
+                        "magic-defense": 220,
                         "spell-cost": 30
-                    }, {
-                        "level": 4, 
-                        "sp-req": 12000, 
-                        "mp": 80, 
-                        "spell": "", 
-                        "gif": "", 
-                        "attack": 165,"defense": 230,"magic-attack": 215, 
-                        "magic-defense": 230, 
+                    },
+                    {
+                        "level": 4,
+                        "sp-req": 12000,
+                        "mp": 80,
+                        "spell": "",
+                        "gif": "",
+                        "attack": 165,
+                        "defense": 230,
+                        "magic-attack": 215,
+                        "magic-defense": 230,
                         "spell-cost": 0
-                    }, {
-                        "level": 5, 
-                        "sp-req": 20000, 
-                        "mp": 100, 
-                        "spell": "Jade Dragon", 
-                        "gif": "", 
-                        "attack": 170,"defense": 250,"magic-attack": 220, 
-                        "magic-defense": 250, 
+                    },
+                    {
+                        "level": 5,
+                        "sp-req": 20000,
+                        "mp": 100,
+                        "spell": "Jade Dragon",
+                        "gif": "",
+                        "attack": 170,
+                        "defense": 250,
+                        "magic-attack": 220,
+                        "magic-defense": 250,
                         "spell-cost": 80
                     }
                 ]
@@ -516,24 +908,31 @@
                         "level": 1,
                         "completions": 0,
                         "damage": 150,
-                        "hits": [100, 50],
+                        "hits": [
+                            100,
+                            50
+                        ],
                         "sp": 35
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 157,
                         "sp": 35
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 165,
                         "sp": 35
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 180,
                         "sp": 35
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 202,
@@ -552,22 +951,26 @@
                         "completions": 0,
                         "damage": 200,
                         "sp": 20
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 210,
                         "sp": 24
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 220,
                         "sp": 28
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 230,
                         "sp": 32
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 250,
@@ -583,22 +986,26 @@
                         "completions": 0,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 0,
@@ -614,22 +1021,26 @@
                         "completions": 0,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 0,
@@ -645,22 +1056,26 @@
                         "completions": 0,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 0,
@@ -676,22 +1091,26 @@
                         "completions": 0,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 0,
@@ -707,22 +1126,26 @@
                         "completions": 0,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 2,
                         "completions": 20,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 3,
                         "completions": 40,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 4,
                         "completions": 60,
                         "damage": 0,
                         "sp": 0
-                    },{
+                    },
+                    {
                         "level": 5,
                         "completions": 80,
                         "damage": 0,
@@ -740,59 +1163,63 @@
                 "physical-attack": "",
                 "levels": [
                     {
-                        "level": 1, 
-                        "sp-req": 0, 
-                        "mp": 20, 
-                        "spell": "Flameshot", 
-                        "gif": "", 
+                        "level": 1,
+                        "sp-req": 0,
+                        "mp": 20,
+                        "spell": "Flameshot",
+                        "gif": "",
                         "attack": 150,
                         "defense": 200,
-                        "magic-attack": 150, 
-                        "magic-defense": 200, 
+                        "magic-attack": 150,
+                        "magic-defense": 200,
                         "spell-cost": 10
-                    }, {
-                        "level": 2, 
-                        "sp-req": 1200, 
-                        "mp": 40, 
-                        "spell": "Explosion", 
-                        "gif": "", 
+                    },
+                    {
+                        "level": 2,
+                        "sp-req": 1200,
+                        "mp": 40,
+                        "spell": "Explosion",
+                        "gif": "",
                         "attack": 155,
                         "defense": 210,
-                        "magic-attack": 155, 
-                        "magic-defense": 210, 
+                        "magic-attack": 155,
+                        "magic-defense": 210,
                         "spell-cost": 20
-                    }, {
-                        "level": 3, 
-                        "sp-req": 6000, 
-                        "mp": 60, 
-                        "spell": "Final Burst", 
-                        "gif": "", 
+                    },
+                    {
+                        "level": 3,
+                        "sp-req": 6000,
+                        "mp": 60,
+                        "spell": "Final Burst",
+                        "gif": "",
                         "attack": 160,
                         "defense": 220,
-                        "magic-attack": 160, 
-                        "magic-defense": 220, 
+                        "magic-attack": 160,
+                        "magic-defense": 220,
                         "spell-cost": 30
-                    }, {
-                        "level": 4, 
-                        "sp-req": 12000, 
-                        "mp": 80, 
-                        "spell": "", 
-                        "gif": "", 
+                    },
+                    {
+                        "level": 4,
+                        "sp-req": 12000,
+                        "mp": 80,
+                        "spell": "",
+                        "gif": "",
                         "attack": 165,
                         "defense": 230,
-                        "magic-attack": 165, 
-                        "magic-defense": 230, 
+                        "magic-attack": 165,
+                        "magic-defense": 230,
                         "spell-cost": 0
-                    }, {
-                        "level": 5, 
-                        "sp-req": 20000, 
-                        "mp": 100, 
-                        "spell": "Red-Eye Dragon", 
-                        "gif": "", 
+                    },
+                    {
+                        "level": 5,
+                        "sp-req": 20000,
+                        "mp": 100,
+                        "spell": "Red-Eye Dragon",
+                        "gif": "",
                         "attack": 170,
                         "defense": 250,
-                        "magic-attack": 170, 
-                        "magic-defense": 250, 
+                        "magic-attack": 170,
+                        "magic-defense": 250,
                         "spell-cost": 80
                     }
                 ]
@@ -813,7 +1240,8 @@
                         "magic-attack": 170,
                         "magic-defense": 250,
                         "spell-cost": 50
-                    },{
+                    },
+                    {
                         "level": 1,
                         "sp-req": 0,
                         "spell": "Divine Dragon Cannon",
