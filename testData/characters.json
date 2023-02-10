@@ -360,7 +360,137 @@
         "name": "Kongol",
         "type": "Player",
         "element": "Earth",
-        "additions": [],
+        "additions": [
+            {
+                "name": "Pursuit",
+                "info": "",
+                "gif": "",
+                "hits": 1,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 110,
+                        "hits": [],
+                        "sp": 38
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 120,
+                        "hits": [],
+                        "sp": 42
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 130,
+                        "hits": [],
+                        "sp": 45
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 50
+                    }
+                ]
+            },
+            {
+                "name": "Inferno",
+                "info": "",
+                "gif": "",
+                "hits": 3,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 125,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 175,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 200,
+                        "hits": [],
+                        "sp": 20
+                    }
+                ]
+            },
+            {
+                "name": "Bone Crush",
+                "info": "",
+                "gif": "",
+                "hits": 5,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 200,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 220,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 240,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 260,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 300,
+                        "hits": [],
+                        "sp": 100
+                    }
+                ]
+            }
+        ],
         "dragoon": [
             {
                 "name": "Golden Dragoon Spirit",
