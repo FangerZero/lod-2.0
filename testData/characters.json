@@ -291,6 +291,178 @@
                         "sp": 34
                     }
                 ]
+            },
+            {
+                "name": "Hammer Spin",
+                "info": "",
+                "gif": "",
+                "hits": 3,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 162,
+                        "hits": [],
+                        "sp": 43
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 174,
+                        "hits": [],
+                        "sp": 51
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 186,
+                        "hits": [],
+                        "sp": 59
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 202,
+                        "hits": [],
+                        "sp": 70
+                    }
+                ]
+            }
+{
+                "name": "Cool Boogie",
+                "info": "",
+                "gif": "",
+                "hits": 4,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 60
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 90
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 120
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 150
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 200
+                    }
+                ]
+            }
+{
+                "name": "Cat's Cradle",
+                "info": "",
+                "gif": "",
+                "hits": 6,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 195,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 240,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 285,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 351,
+                        "hits": [],
+                        "sp": 20
+                    }
+                ]
+            }
+{
+                "name": "Perky Step",
+                "info": "",
+                "gif": "",
+                "hits": 7,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 200,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 300,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 400,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 500,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 600,
+                        "hits": [],
+                        "sp": 100
+                    }
+                ]
             }
         ],
         "dragoon": [
