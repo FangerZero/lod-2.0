@@ -516,7 +516,266 @@
         "name": "Haschel",
         "type": "Player",
         "element": "Thunder",
-        "additions": [],
+        "additions": [
+            {
+                "name": "Double Punch",
+                "info": "",
+                "gif": "",
+                "hits": 1,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 110,
+                        "hits": [],
+                        "sp": 38
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 120,
+                        "hits": [],
+                        "sp": 42
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 130,
+                        "hits": [],
+                        "sp": 45
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 50
+                    }
+                ]
+            },
+            {
+                "name": "Flurry of Styx",
+                "info": "",
+                "gif": "",
+                "hits": 2,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 162,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 174,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 186,
+                        "hits": [],
+                        "sp": 20
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 202,
+                        "hits": [],
+                        "sp": 20
+                    }
+                ]
+            },
+            {
+                "name": "Summon Four Gods",
+                "info": "",
+                "gif": "",
+                "hits": 3,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 50
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 61
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 75
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 86
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 100,
+                        "hits": [],
+                        "sp": 100
+                    }
+                ]
+            },
+            {
+                "name": "Five Ring Shattering",
+                "info": "",
+                "gif": "",
+                "hits": 4,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 150,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 187,
+                        "hits": [],
+                        "sp": 35
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 225,
+                        "hits": [],
+                        "sp": 40
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 262,
+                        "hits": [],
+                        "sp": 45
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 300,
+                        "hits": [],
+                        "sp": 50
+                    }
+                ]
+            },
+            {
+                "name": "Hex Hammer",
+                "info": "",
+                "gif": "",
+                "hits": 6,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 200,
+                        "hits": [],
+                        "sp": 15
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 250,
+                        "hits": [],
+                        "sp": 15
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 300,
+                        "hits": [],
+                        "sp": 15
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 350,
+                        "hits": [],
+                        "sp": 15
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 400,
+                        "hits": [],
+                        "sp": 15
+                    }
+                ]
+            },
+            {
+                "name": "Omni Sweep",
+                "info": "",
+                "gif": "",
+                "hits": -1,
+                "levels": [
+                    {
+                        "level": 1,
+                        "completions": 0,
+                        "damage": 300,
+                        "hits": [],
+                        "sp": 50
+                    },
+                    {
+                        "level": 2,
+                        "completions": 20,
+                        "damage": 345,
+                        "hits": [],
+                        "sp": 75
+                    },
+                    {
+                        "level": 3,
+                        "completions": 40,
+                        "damage": 390,
+                        "hits": [],
+                        "sp": 100
+                    },
+                    {
+                        "level": 4,
+                        "completions": 60,
+                        "damage": 435,
+                        "hits": [],
+                        "sp": 125
+                    },
+                    {
+                        "level": 5,
+                        "completions": 80,
+                        "damage": 501,
+                        "hits": [],
+                        "sp": 150
+                    }
+                ]
+            }
+        ],
         "dragoon": [
             {
                 "name": "Violet Dragoon Spirit",
