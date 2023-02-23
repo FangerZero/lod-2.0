@@ -2,7 +2,7 @@
     {
         "link": "rose",
         "name": "Rose",
-        "type": "Player",
+        "type": "Hero",
         "element": "Dark",
         "additions": [
             {
@@ -247,7 +247,7 @@
     {
         "link": "meru",
         "name": "Meru",
-        "type": "Player",
+        "type": "Hero",
         "element": "Water",
         "additions": [
             {
@@ -530,7 +530,7 @@
     {
         "link": "kongol",
         "name": "Kongol",
-        "type": "Player",
+        "type": "Hero",
         "element": "Earth",
         "additions": [
             {
@@ -738,7 +738,7 @@
     {
         "link": "shana",
         "name": "Shana",
-        "type": "Player",
+        "type": "Hero",
         "element": "Light",
         "additions": [],
         "dragoon": [
@@ -816,7 +816,7 @@
     {
         "link": "haschel",
         "name": "Haschel",
-        "type": "Player",
+        "type": "Hero",
         "element": "Thunder",
         "additions": [
             {
@@ -1153,7 +1153,7 @@
     {
         "link": "lavitz",
         "name": "Lavitz",
-        "type": "Player",
+        "type": "Hero",
         "element": "Wind",
         "additions": [
             {
@@ -1446,7 +1446,7 @@
     {
         "link": "dart-feld",
         "name": "Dart Feld",
-        "type": "Player",
+        "type": "Hero",
         "age": 23,
         "height-cm": 178,
         "height-ft": "5'10\"",
